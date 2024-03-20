@@ -11,3 +11,8 @@ Custom Css
     max-width: 400px; /* Adjust the value to your desired size */
     height: 400px; /* Maintain aspect ratio */
 }
+
+.col-md-4 img{
+    max-width: 400px; /* Adjust the value to your desired size */
+    height: auto; /* Maintain aspect ratio */
+}
