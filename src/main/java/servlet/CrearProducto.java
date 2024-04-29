@@ -35,6 +35,8 @@ public class CrearProducto extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             
+            System.out.println("AAA");
+            
             String nombre = request.getParameter("nombre");
             String descripcion = request.getParameter("descripcion");
             String imagen = request.getParameter("img");

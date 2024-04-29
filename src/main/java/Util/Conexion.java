@@ -15,12 +15,12 @@ import java.sql.SQLException;
 public class Conexion {
     
     private final String host = "localhost";
-    private final String user = "";
-    private final String pass = "";
+    private final String user = "root";
+    private final String pass = "123";
     private final String port = "3306";
     private final String dbName = "Papeleria";
     
-    private final String url = "jdbc:mysq://"+host+":"+port+"/"+dbName+"?useSSL=false";
+    private final String url = "jdbc:mysql://"+host+":"+port+"/"+dbName+"?useSSL=false";
     
     private Connection conexion;
     
