@@ -1,7 +1,7 @@
 <div class="col-md-4">x
     <div class="card mb-4 product-wap rounded-0">
         <div class="card rounded-0">
-            <img class="card-img rounded-0 img-fluid" src="<%= request.getAttribute("producto").getImg() %>">                                <div
+            <img class="card-img rounded-0 img-fluid" src="">                                <div
                 class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                 <ul class="list-unstyled">
                     <li><a class="btn btn-success text-white" href="shop-single.html"><i
@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="card-body">
-            <a href="shop-single.html" class="h3 text-decoration-none"><%= request.getAttribute("producto").getNombre() %></a>                                <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+            <a href="shop-single.html" class="h3 text-decoration-none"><%= request.getAttribute("nombre_producto") %></a>                                <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                 <li class="pt-2">
                     <span
                         class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
@@ -37,6 +37,6 @@
                     <i class="text-muted fa fa-star"></i>
                 </li>
             </ul>
-            <p class="text-center mb-0">$<%= request.getAttribute("producto").getPrecio() %></p>                            </div>
+            <p class="text-center mb-0">$ ${precio_producto} </p>                            </div>
     </div>
 </div>

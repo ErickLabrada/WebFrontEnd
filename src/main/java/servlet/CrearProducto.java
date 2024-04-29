@@ -25,6 +25,9 @@ import java.util.GregorianCalendar;
 @WebServlet(name = "CrearProducto", urlPatterns = {"/CrearProducto"})
 public class CrearProducto extends HttpServlet {
 
+    private final String UPLOAD_PATH = "img_productos"+File.separator;
+    
+    
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -44,18 +47,11 @@ public class CrearProducto extends HttpServlet {
             String descripcion = request.getParameter("descripcion");
             String precio = request.getParameter("precio");
             
-            final Part part = request.getPart("inputGroupFile01");
+            String relativePath = getServletContext().getRealPath("")+File.separator+UPLOAD_PATH;
             
-            OutputStream outputStream = null;
-            
-            String relativePath = System.getProperty("usr.dir");
-            
-            try {
-                outputStream = new FileOutputStream(new File(relativePath, new GregorianCalendar().toString()));
+            for (Part part : request.getParts()) {
                 
-                
-                
-            } catch (Exception e) {
+                part.write(relativePath+File.separator+ Math.ceil(Math.random() * 100));
                 
             }
             

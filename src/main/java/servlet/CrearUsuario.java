@@ -20,7 +20,6 @@ import java.io.PrintWriter;
  */
 public class CrearUsuario extends HttpServlet {
 
-    private final String UPLOAD_PATH = "img_productos"+File.separator;
     
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -39,14 +38,6 @@ public class CrearUsuario extends HttpServlet {
             String nombre = request.getParameter("usuario");
             String pass = request.getParameter("pass");
             String isAdmin = request.getParameter("isAdmin");
-            
-            String relativePath = getServletContext().getRealPath("")+File.separator+UPLOAD_PATH;
-            
-            for (Part part : request.getParts()) {
-                
-                part.write(relativePath+File.separator+ Math.ceil(Math.random() * 100));
-                
-            }
             
             Consultas c = new Consultas();
             

@@ -85,7 +85,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalLoginLabel">Inicio de sesiï¿½n</h1>
+                    <h1 class="modal-title fs-5" id="modalLoginLabel">Inicio de sesión</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
@@ -116,8 +116,11 @@
                             <button class="btn btn-primary">Iniciar</button>
                         </div>
                     </div>
-
+                    
                 </form>
+                
+                <a href="/tiendita/registro.jsp"> registrarse! </a>
+                
             </div>
         </div>
 

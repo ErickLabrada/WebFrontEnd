@@ -14,8 +14,8 @@
     <body>
 
         <form action="CrearUsuario" method="POST">
-            <input type="text" placeholder="Nombre">
-            <input type="password" placeholder="Contraseña">
+            <input type="text" placeholder="Nombre" name="usuario">
+            <input type="password" placeholder="Contraseña" name="pass">
             <input type="submit" value="Registarse">
         </form>
 
