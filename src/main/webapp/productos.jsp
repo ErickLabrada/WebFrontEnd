@@ -275,7 +275,7 @@ https://templatemo.com/tm-559-zay-shop
                 </div>
                 <div class="row">
                     
-                        <jsp:include page="/WEB-INF/jspf/navbar.jspf" />
+                        <jsp:include page="/WEB-INF/jspf/producto.jspf" />
 
                     
                     <!-- <div class="col-md-4">
