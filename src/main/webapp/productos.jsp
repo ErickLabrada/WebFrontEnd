@@ -277,13 +277,18 @@ https://templatemo.com/tm-559-zay-shop
 
 
 
-                    <%
-                    for (int i = 0; i <= 2; i++) {
-                    %>
-                    <jsp:include page="/WEB-INF/jspf/producto.jspf" />
-                    <%
-                        }
-                    %>
+                    <div class="row">
+                        <%
+                            Consultas c = new Consultas();
+                            List<Producto> listaProductos = c.obtenerProductos();
+                            for (Producto producto : listaProductos) {
+                                request.setAttribute("producto", producto);
+                        %>
+                        <jsp:include page="/WEB-INF/jspf/producto.jspf" />
+                        <%
+                            }
+                        %>
+                    </div>
 
 
 
