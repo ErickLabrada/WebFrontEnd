@@ -479,4 +479,49 @@ public class Consultas extends Conexion{
         
     }
     
+    public boolean editarAdmin(String name, String password) {
+        
+        Usuario s = obtenerUsuario(name);
+        
+        if (s == null) {
+            return false;
+        }
+        
+        PreparedStatement st = null;
+        
+        try {
+            String sql = "UPDATE Usuarios SET Nombre=?, Passcode=?, isAdmin=? WHERE Nombre=?";
+            
+            st = this.getConexion().prepareStatement(sql);
+            
+            st.setString(1, s.getNombre());
+            st.setString(2, password);
+            st.setBoolean(3, true);
+            st.setString(4, s.getNombre());
+            
+            return st.executeUpdate() == 1;
+            
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        } finally {
+            try {
+                
+                if (st != null) {
+                    st.close();
+                }
+                
+                if (this.getConexion() != null) {
+                    this.getConexion().close();
+                }
+                
+            } catch (Exception e) {
+                
+                System.out.println(e.getMessage());
+                
+            }
+        }
+        
+        return false;
+    }
+    
 }
