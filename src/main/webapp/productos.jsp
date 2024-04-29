@@ -274,10 +274,19 @@ https://templatemo.com/tm-559-zay-shop
                     </div>
                 </div>
                 <div class="row">
-                    
-                        <jsp:include page="/WEB-INF/jspf/producto.jspf" />
 
-                    
+
+
+                    <%
+                    for (int i = 0; i <= 2; i++) {
+                    %>
+                    <jsp:include page="/WEB-INF/jspf/producto.jspf" />
+                    <%
+                        }
+                    %>
+
+
+
                     <!-- <div class="col-md-4">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
