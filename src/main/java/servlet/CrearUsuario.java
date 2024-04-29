@@ -4,6 +4,7 @@
  */
 package servlet;
 
+import Util.Consultas;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -33,8 +34,15 @@ public class CrearUsuario extends HttpServlet {
             
             String nombre = request.getParameter("nombre");
             String pass = request.getParameter("pass");
+            String isAdmin = request.getParameter("isAdmin");
             
+            Consultas c = new Consultas();
             
+            if (c.agregarUsuario(nombre, pass, Boolean.parseBoolean(isAdmin))) {
+                response.sendRedirect("exitoRegistro.jsp");
+            } else {
+                response.sendRedirect("errorRegistro.jsp");
+            }
             
         }
     }
