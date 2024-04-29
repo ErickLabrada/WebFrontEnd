@@ -128,14 +128,14 @@
                             </div>
 
                             <div class="row">
-                                <form action="CrearProducto" method="post" class="col-8">
+                                <form action="CrearProducto" method="post" class="col-8" enctype="multipart/form-data">
                                     <div class="form-floating mb-3">
                                         <input type="text" name="nombre" class="form-control" placeholder="Producto">
                                         <label for="nombreProducto">Nombre del producto...</label>
                                     </div>
                                     <div class="form-floating mb-3">
                                         <input type="text" name="descripcion" class="form-control"
-                                            placeholder="DescripciÃ³n">
+                                            placeholder="Descripción">
                                         <label for="nombreProducto">Descripción...</label>
                                     </div>
                                     <div class="form-floating mb-3">

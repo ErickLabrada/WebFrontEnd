@@ -127,8 +127,8 @@
                                         <label for="usuario">Nombre de usuario...</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="password" name="contraseña" class="form-control" placeholder="Contraseña">
-                                        <label for="contraseña">Contraseña...</label>
+                                        <input type="password" name="pass" class="form-control" placeholder="Contraseña">
+                                        <label for="pass">Contraseña...</label>
                                     </div>
 
                                     <div class="col-2 align-self-center">

@@ -49,7 +49,7 @@ https://templatemo.com/tm-559-zay-shop
             </div>
         </div>
     </nav>
-    <!-- Close Top Nav -->
+    <!-- Close Top Nav -->    
     <jsp:include page="/WEB-INF/jspf/navbar.jspf" />
 
     <!-- Start Banner Hero -->

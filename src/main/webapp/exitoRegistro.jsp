@@ -17,7 +17,7 @@
             
             alert("El usuario se registro con exito");
             
-            window.location.replace("http://localhost:8080/tiendita.jsp");
+            window.location.replace("http://localhost:8080/tiendita/index.jsp");
             
         </script>
         

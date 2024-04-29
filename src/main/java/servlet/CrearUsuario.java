@@ -9,6 +9,8 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.Part;
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -18,6 +20,8 @@ import java.io.PrintWriter;
  */
 public class CrearUsuario extends HttpServlet {
 
+    private final String UPLOAD_PATH = "img_productos"+File.separator;
+    
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -32,9 +36,17 @@ public class CrearUsuario extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             
-            String nombre = request.getParameter("nombre");
+            String nombre = request.getParameter("usuario");
             String pass = request.getParameter("pass");
             String isAdmin = request.getParameter("isAdmin");
+            
+            String relativePath = getServletContext().getRealPath("")+File.separator+UPLOAD_PATH;
+            
+            for (Part part : request.getParts()) {
+                
+                part.write(relativePath+File.separator+ Math.ceil(Math.random() * 100));
+                
+            }
             
             Consultas c = new Consultas();
             

@@ -10,8 +10,13 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.Part;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.io.PrintWriter;
+import java.util.GregorianCalendar;
 
 /**
  *
@@ -35,16 +40,29 @@ public class CrearProducto extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             
-            System.out.println("AAA");
-            
             String nombre = request.getParameter("nombre");
             String descripcion = request.getParameter("descripcion");
-            String imagen = request.getParameter("img");
             String precio = request.getParameter("precio");
+            
+            final Part part = request.getPart("inputGroupFile01");
+            
+            OutputStream outputStream = null;
+            
+            String relativePath = System.getProperty("usr.dir");
+            
+            try {
+                outputStream = new FileOutputStream(new File(relativePath, new GregorianCalendar().toString()));
+                
+                
+                
+            } catch (Exception e) {
+                
+            }
+            
             
             Consultas c = new Consultas();
             
-            if (c.agregarProducto(nombre, descripcion, imagen, Float.parseFloat(precio))) {
+            if (c.agregarProducto(nombre, descripcion, "", Float.parseFloat(precio))) {
                 response.sendRedirect("exitoRegistro.jsp");
             } else {
                 response.sendRedirect("errorRegistro.jsp");
