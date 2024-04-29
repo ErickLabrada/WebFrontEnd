@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@ page contentType="text/html" pageEncoding="UTF-8" %>
 
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <title>Papelería & Boutique Dimas</title>
-    <meta charset="utf-8">
+    <title>Papelerí­a & Boutique Dimas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -48,93 +50,7 @@ https://templatemo.com/tm-559-zay-shop
         </div>
     </nav>
     <!-- Close Top Nav -->
-
-
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow">
-        <div class="container d-flex justify-content-between align-items-center">
-
-            <a class="navbar-brand logo h1 align-self-center" style="color: #4C3D3D;" href="index.html">
-                Boutique Dimas
-            </a>
-
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
-                id="templatemo_main_nav">
-                <div class="flex-fill">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="empresa.html">Empresa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar align-self-center d-flex">
-                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                            <div class="input-group-text">
-                                <i class="fa fa-fw fa-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal"
-                        data-bs-target="#templatemo_search">
-                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                    </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
-                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                        <span
-                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
-                    </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
-                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                        <span
-                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </nav>
-    <!-- Close Header -->
-
-    <!-- Modal -->
-    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="w-100 pt-1 mb-5 text-right">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <form action="" method="get" class="modal-content modal-body border-0 p-0">
-                <div class="input-group mb-2">
-                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
-                    <button type="submit" class="input-group-text bg-success text-light">
-                        <i class="fa fa-fw fa-search text-white"></i>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-
+    <jsp:include page="/WEB-INF/jspf/navbar.jspf" />
 
     <!-- Start Banner Hero -->
     <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -152,17 +68,12 @@ https://templatemo.com/tm-559-zay-shop
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
-                                <h1 class="h1" style="color: #4C3D3D;"><b>Papelería</b> & Boutique</h1>
+                                <h1 class="h1" style="color: #4C3D3D;"><b>Papelerí­a</b> & Boutique</h1>
                                 <h3 class="h2">¡Bienvenidos!</h3>
                                 <p>
                                     En nuestro espacio, fusionamos lo mejor de dos mundos: la elegancia y la utilidad.
-                                    Somos mucho más que una simple papelería; somos un destino donde la practicidad se
+                                    Somos mucho más que una simple papelerí­a; somos un destino donde la practicidad se
                                     encuentra con el estilo.
-                                    <!-- <a rel="sponsored" class="text-success" href="https://templatemo.com" target="_blank">TemplateMo</a> website. 
-                                    Image credits go to <a rel="sponsored" class="text-success" href="https://stories.freepik.com/" target="_blank">Freepik Stories</a>,
-                                    <a rel="sponsored" class="text-success" href="https://unsplash.com/" target="_blank">Unsplash</a> and
-                                    <a rel="sponsored" class="text-success" href="https://icons8.com/" target="_blank">Icons 8</a>.
-                                    -->
                                 </p>
                             </div>
                         </div>
@@ -177,14 +88,14 @@ https://templatemo.com/tm-559-zay-shop
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
-                                <h1 class="h1" style="color: #4C3D3D;"><b>Papelería</b></h1>
+                                <h1 class="h1" style="color: #4C3D3D;"><b>Papelerí­a</b></h1>
                                 <h3 class="h2"></h3>
                                 <p>
-                                    En nuestra sección de papelería, encontrarás una amplia gama de productos
+                                    En nuestra sección de papelerí­a, encontrarás una amplia gama de productos
                                     cuidadosamente seleccionados para
                                     satisfacer todas tus necesidades de escritura, organización y creatividad. Desde
                                     elegantes cuadernos hasta
-                                    útiles accesorios de oficina, estamos aquí para hacer que tu día a día sea más
+                                    útiles accesorios de oficina, estamos aquí­ para hacer que tu dí­a a dí­a sea más
                                     inspirador y eficiente. </p>
                             </div>
                         </div>
@@ -202,11 +113,11 @@ https://templatemo.com/tm-559-zay-shop
                                 <h1 class="h1" style="color: #4C3D3D"><b>Boutique</b></h1>
                                 <h3 class="h2"> </h3>
                                 <p>
-                                    Pero eso no es todo. Nuestra boutique ofrece una exquisita selección de artículos de
+                                    Pero eso no es todo. Nuestra boutique ofrece una exquisita selección de artí­culos de
                                     moda y
-                                    accesorios que complementarán tu estilo personal. Desde joyería elegante hasta
+                                    accesorios que complementarán tu estilo personal. Desde joyerí­a elegante hasta
                                     bolsos
-                                    exclusivos, estamos aquí para ayudarte a destacar con elegancia en cualquier
+                                    exclusivos, estamos aquí­ para ayudarte a destacar con elegancia en cualquier
                                     ocasión. </p>
                             </div>
                         </div>
@@ -287,11 +198,7 @@ https://templatemo.com/tm-559-zay-shop
                             </ul>
                             <a href="shop-single.html" class="h2 text-decoration-none text-dark">Lapiz</a>
                             <p class="card-text">
-                                Punta duradera: Fabricada con materiales de alta calidad para una escritura suave y precisa.
-                                Diseño ergonómico: Cómodo de sostener durante períodos prolongados de escritura.
-                                Versatilidad: Apto para tomar notas, dibujar o realizar esbozos con facilidad.
-                                Estilo elegante: Disponible en varios diseños y colores para adaptarse a tu gusto personal.
-                                Calidad garantizada: Producto duradero que ofrece un rendimiento constante a lo largo del tiempo.
+                                Textura suave: Elimina marcas y errores de forma limpia y sin dañar el papel. Precisión: Borra con eficacia trazos de lápiz sin dejar residuos ni manchas. Durabilidad: Construido con materiales de alta calidad que garantizan una larga vida útil. Tamaño conveniente: Compacto y fácil de manejar para un uso cómodo y portátil. Ideal para múltiples usos: Perfecto para estudiantes, artistas y profesionales que requieren una corrección precisa.
                             </p>
                             <p class="text-muted">Reviews (24)</p>
                         </div>
@@ -315,11 +222,7 @@ https://templatemo.com/tm-559-zay-shop
                             </ul>
                             <a href="shop-single.html" class="h2 text-decoration-none text-dark">Bolso Gucci</a>
                             <p class="card-text">
-                                Materiales de calidad: Confeccionado con materiales resistentes y duraderos para un uso prolongado.
-                                Diseño funcional: Con compartimentos espaciosos y bolsillos adicionales para una organización óptima.
-                                Estilo versátil: Combina fácilmente con diversos atuendos, desde casual hasta elegante.
-                                Comodidad: Correas ajustables y acolchadas para un transporte cómodo durante todo el día.
-                                Detalles cuidadosamente diseñados: Cierres de calidad y acabados finos que realzan su apariencia.
+                                Materiales de calidad: Confeccionado con materiales resistentes y duraderos para un uso prolongado. Diseño funcional: Con compartimentos espaciosos y bolsillos adicionales para una organización óptima. Estilo versátil: Combina fácilmente con diversos atuendos, desde casual hasta elegante. Comodidad: Correas ajustables y acolchadas para un transporte cómodo durante todo el día. Detalles cuidadosamente diseñados: Cierres de calidad y acabados finos que realzan su apariencia.
                             </p>
                             <p class="text-muted">Reviews (48)</p>
                         </div>
@@ -387,7 +290,7 @@ https://templatemo.com/tm-559-zay-shop
                     <ul class="list-unstyled text-light footer-link-list">
                         <li><a class="text-decoration-none" href="#">Utiles escolares</a></li>
                         <li><a class="text-decoration-none" href="#">Material de arte</a></li>
-                        <li><a class="text-decoration-none" href="#">Papelería</a></li>
+                        <li><a class="text-decoration-none" href="#">Papelerí­a</a></li>
                         <li><a class="text-decoration-none" href="#">Bolsos</a></li>
                         <li><a class="text-decoration-none" href="#">Accesorios</a></li>
                         <li><a class="text-decoration-none" href="#">Calzado</a></li>
@@ -431,7 +334,7 @@ https://templatemo.com/tm-559-zay-shop
                             Rodriguez Valenzuela Rosa(Alan),
                             Erick Antonio Labrada Rodriguez,
                             Fernando Tadeo Zayas Bernal,
-                            Roberto Contreras Martínez,
+                            Roberto Contreras Martí­nez,
                         </p>
                     </div>
                 </div>

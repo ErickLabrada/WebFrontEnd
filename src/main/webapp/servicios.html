@@ -72,7 +72,7 @@ https://templatemo.com/tm-559-zay-shop
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Inicio</a>
                         </li>
-                        
+
                         <li class="nav-item">
                             <a class="nav-link" href="empresa.html">Empresa</a>
                         </li>
@@ -105,17 +105,63 @@ https://templatemo.com/tm-559-zay-shop
                         <span
                             class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                     </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                    <button class="btn nav-icon position-relative text-decoration-none" data-bs-target="#modalLogin"
+                        data-bs-toggle="modal">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                        <span
-                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
-                    </a>
+                    </button>
                 </div>
             </div>
 
         </div>
     </nav>
     <!-- Close Header -->
+
+    <!-- modal login -->
+
+    <div class="modal fade" id="modalLogin" tabindex="1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalLoginLabel">Inicio de sesión</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <form class="container modal-body text-center" method="POST" action="iniciar">
+
+                    <div class="row">
+                        <div class="col p-3">
+
+                            <div class="form-floating">
+                                <input type="text" class="form-control" name="usuario" placeholder="Usuario">
+                                <label for="usuario">Usuario</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col p-3">
+                            <div class="form-floating">
+                                <input type="password" name="pass" class="form-control" placeholder="Contraseña">
+                                <label for="pass">Contraseña</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end">
+                        <div class="col-2 order-last pr-3">
+                            <button class="btn btn-primary">Iniciar</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- fin modal login -->
 
     <!-- Modal -->
     <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
@@ -141,66 +187,62 @@ https://templatemo.com/tm-559-zay-shop
         <div class="container">
             <div class="row align-items-center py-5">
                 <div class="col-md-8 text-black">
-                    <h1>Sobre nosotros</h1>
+                    <h1>Papelería</h1>
                     <p>
-                        Boutique Dimas, no es solo una tienda, ¡es el centro de la organización y la comida! Imagina un
-                        lugar donde puedes encontrar desde el lápiz más puntiagudo hasta la lata de frijoles más
-                        deliciosa.
-                        Las cradoras y organizadoras, mantienen un establecimiento donde cada artículo cumple con tus
-                        aspectativas. ¡Ven a Boutique Dimas, donde comprar es una aventura!
+                        <br>
+                        Encuentra todo lo que necesitas para el trabajo y el estudio en nuestra sección de papelería. Desde lápices y bolígrafos hasta material de oficina personalizado. En nuestra sección de papelería, te ofrecemos mucho más que simples suministros de oficina. Es el lugar donde la creatividad se encuentra con la funcionalidad, proporcionándote todo lo necesario para expresarte y tener éxito en tus proyectos.
+
+
+
+
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/img/about-hero.svg" alt="About Hero">
+                    <img src="assets/img/Papeleria.png" alt="About Hero">
                 </div>
             </div>
         </div>
     </section>
-    <!-- Close Banner -->
 
-    <!-- Start Section -->
-    <section class="container py-5">
-        <div class="row text-center pt-5 pb-3">
-            <div class="col-lg-6 m-auto">
-                <h1 class="h1">Nuestros servicios</h1>
-                <p>
-                    Realizados con la mejor calidad que nuestra empresa puede permitirse, para ofrecerte
-                    una experiencia inigualable.
-                </p>
+    <section class="py-5" style="background-color: #FFF7D4;">
+        <div class="container">
+            <div class="row align-items-center py-5">
+                <div class="col-md-4">
+                    <img src="assets/img/Boutique.png" alt="About Hero">
+                </div>
+                <div class="col-md-8 text-black">
+                    <h1>Boutique</h1>
+                    <p>
+                        <br>
+                        Descubre las últimas tendencias de moda y estilo en nuestra boutique. Desde ropa elegante y accesorios hasta calzado de moda, te ayudaremos a encontrar el look perfecto para cualquier ocasión. Además, nuestro equipo de expertos en moda está aquí para brindarte asesoramiento personalizado y garantizar que te veas y te sientas increíble.
+
+
+                    </p>
+                </div>
+                
             </div>
         </div>
-        <div class="row">
+    </section>
 
-            <div class="col-md-6 col-lg-3 pb-5">
-                <div class="h-100 py-5 services-icon-wap shadow">
-                    <div class="h1 text-center" style="color: #C07F00;"><i class="fa fa-archive fa-lg"></i></div>
-                    <h2 class="h5 mt-4 text-center">Sistema de apartado</h2>
+    <section class="py-5" style="background-color: #FFF7D4;">
+        <div class="container">
+            <div class="row align-items-center py-5">
+                <div class="col-md-8 text-black">
+                    <h1>Sorteos</h1>
+                    <p>
+                        <br>
+                        No te pierdas la oportunidad de ganar premios emocionantes en nuestros sorteos y rifas! Participa para tener la oportunidad de llevarte a casa increíbles regalos, descuentos especiales y mucho más. Es nuestra manera de agradecer tu apoyo y fomentar la diversión y la emoción entre nuestra comunidad de clientes.
+
+
+                    </p>
                 </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 pb-5">
-                <div class="h-100 py-5 services-icon-wap shadow">
-                    <div class="h1 text-center" style="color: #C07F00;"><i class="fas fa-credit-card"></i></div>
-                    <h2 class="h5 mt-4 text-center">Pagos con tarjeta</h2>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 pb-5">
-                <div class="h-100 py-5 services-icon-wap shadow">
-                    <div class="h1 text-center" style="color: #C07F00;"><i class="fa fa-percent"></i></div>
-                    <h2 class="h5 mt-4 text-center">Descuentos por mayoria</h2>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 pb-5">
-                <div class="h-100 py-5 services-icon-wap shadow">
-                    <div class="h1 text-center" style="color: #C07F00;" ><i class="fa fa-user"></i></div>
-                    <h2 class="h5 mt-4 text-center">Servicio de 12 horas 8 a 8</h2>
+                <div class="col-md-4">
+                    <img src="assets/img/Giveaway.png" alt="About Hero">
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Section -->
+
 
     <!-- Start Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
@@ -208,7 +250,8 @@ https://templatemo.com/tm-559-zay-shop
             <div class="row">
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 border-bottom pb-3 border-light logo" style="color: #fff;" >Papelería & Boutique Dimas</h2>
+                    <h2 class="h2 border-bottom pb-3 border-light logo" style="color: #fff;">Papelería & Boutique Dimas
+                    </h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fas fa-map-marker-alt fa-fw"></i>
