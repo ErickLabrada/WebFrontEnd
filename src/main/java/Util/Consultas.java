@@ -530,7 +530,7 @@ public class Consultas extends Conexion{
         ResultSet rs = null;
 
         try {
-            String consulta = "select * from usuarios where nombre=? and pass=?";
+            String consulta = "select * from usuarios where Nombre=? and Passcode=?";
             System.out.println("Consulta: " + consulta);
             pst = getConexion().prepareStatement(consulta, ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
             pst.setString(1, name);
@@ -560,5 +560,4 @@ public class Consultas extends Conexion{
         }
         return false;
     }
-    
 }
