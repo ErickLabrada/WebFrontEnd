@@ -433,7 +433,7 @@ public class Consultas extends Conexion{
             
             rs = st.executeQuery();
             
-            if (rs.next()) {
+            while (rs.next()) {
                 
                 listaProductos.add(
                         new Producto(
@@ -521,6 +521,43 @@ public class Consultas extends Conexion{
             }
         }
         
+        return false;
+    }
+    
+    public boolean autenticacion(String name, String password) {
+        
+        PreparedStatement pst = null;
+        ResultSet rs = null;
+
+        try {
+            String consulta = "select * from usuarios where nombre=? and pass=?";
+            System.out.println("Consulta: " + consulta);
+            pst = getConexion().prepareStatement(consulta, ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+            pst.setString(1, name);
+            pst.setString(2, password);
+            rs = pst.executeQuery();
+
+            if (rs.absolute(1)) {
+                return true;
+            }
+
+        } catch (Exception e) {
+            System.out.println("Error en " + e);
+        } finally {
+            try {
+                if(getConexion()!=null){
+                    getConexion().close();
+                }
+                if(pst!=null){
+                    pst.close();
+                }
+                if(rs!=null){
+                    rs.close();
+                }
+            } catch(Exception e){
+            System.out.println("Error en " + e);
+            }
+        }
         return false;
     }
     
