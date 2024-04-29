@@ -8,6 +8,8 @@ import Dominio.Producto;
 import Dominio.Usuario;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -286,15 +288,194 @@ public class Consultas extends Conexion{
         return false;
     }
     
-    public boolean editarProducto(){ 
+    public boolean editarProducto(int id, String nombre, String img, String Descripcion, double precio){ 
+        PreparedStatement st = null;
         
+        try {
+            String query = "UPDATE Productos SET Nombre=?, Descripcion=?, Img=?, Precio=? WHERE Producto_id=?";
+            
+            st = this.getConexion().prepareStatement(query);
+            
+            st.setString(1, nombre);
+            st.setString(2, Descripcion);
+            st.setString(3, img);
+            st.setDouble(4, precio);
+            st.setInt(5, id);
+            
+            return st.executeUpdate() == 1;
+            
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        } finally {
+            
+            try {
+                
+                if (st != null) {
+                    st.close();
+                }
+                
+                if (this.getConexion() != null) {
+                    this.getConexion().close();
+                }
+                
+            } catch (Exception e) {
+                
+                System.out.println(e.getMessage());
+                
+            }
+            
+        }
+        
+        return false;
     }
     
-    public boolean eliminarProducto(){
+    public boolean eliminarProducto(int id){
+        PreparedStatement st = null;
         
+        try {
+            String query = "DELETE FROM Producto WHERE Producto_id=?";
+            
+            st = this.getConexion().prepareStatement(query);
+            
+            st.setInt(1, id);
+            
+            return st.executeUpdate() == 1;
+            
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        } finally {
+            
+            try {
+                
+                if (st != null) {
+                    st.close();
+                }
+                
+                if (this.getConexion() != null) {
+                    this.getConexion().close();
+                }
+                
+            } catch (Exception e) {
+                
+                System.out.println(e.getMessage());
+                
+            }
+            
+        }
+        
+        return false;
     }
     
-    public Producto obtenerProducto(){
+    public Producto obtenerProducto(int id){
+        
+        Producto p = null;
+        PreparedStatement st = null;
+        ResultSet rs = null;
+        
+        try {
+            String query = "SELECT * FROM Producto WHERE Producto_id=?";
+            
+            st = this.getConexion().prepareStatement(query);
+            
+            st.setInt(1, id);
+            
+            rs = st.executeQuery();
+            
+            if (rs.next()) {
+                
+                p = new Producto(rs.getString("Nombre"), rs.getString("Descripcion"), rs.getString("Img"), rs.getDouble("Precio"));
+                
+            }
+            
+            return p;
+            
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        } finally {
+            
+            try {
+            
+                if (rs != null) {
+                    rs.close();
+                }
+                
+                if (st != null) {
+                    st.close();
+                }
+                
+                if (this.getConexion() != null) {
+                    this.getConexion().close();
+                }
+                
+            } catch (Exception e) {
+                
+                System.out.println(e.getMessage());
+                
+            }
+            
+        }
+        
+        
+        return p;
+    }
+    
+    public List<Producto> obtenerProductos() {
+        
+        List<Producto> listaProductos = new ArrayList();
+        
+        PreparedStatement st = null;
+        ResultSet rs = null;
+        
+        try {
+            String query = "SELECT * FROM Producto";
+            
+            st = this.getConexion().prepareStatement(query);
+            
+            rs = st.executeQuery();
+            
+            if (rs.next()) {
+                
+                listaProductos.add(
+                        new Producto(
+                                rs.getString("Nombre"), 
+                                rs.getString("Descripcion"), 
+                                rs.getString("Img"), 
+                                rs.getDouble("Precio")
+                        )
+                );
+                
+            }
+            
+            return listaProductos;
+            
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        } finally {
+            
+            try {
+            
+                if (rs != null) {
+                    rs.close();
+                }
+                
+                if (st != null) {
+                    st.close();
+                }
+                
+                if (this.getConexion() != null) {
+                    this.getConexion().close();
+                }
+                
+            } catch (Exception e) {
+                
+                System.out.println(e.getMessage());
+                
+            }
+            
+        }
+        
+        
+        return listaProductos;
         
     }
     
