@@ -50,7 +50,7 @@ https://templatemo.com/tm-559-zay-shop
         </div>
     </nav>
     <!-- Close Top Nav -->    
-    <jsp:include page="/WEB-INF/jspf/navbar.jspf" />
+    <jsp:include page="/WEB-INF/jspf/navbar.jsp" />
 
     <!-- Start Banner Hero -->
     <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">

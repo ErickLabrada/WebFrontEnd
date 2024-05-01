@@ -42,7 +42,8 @@ public class inicioSesion extends HttpServlet {
 
             if (c.autenticacion(usuario, clave)) {
                 HttpSession objSesion = request.getSession(true);
-                objSesion.setAttribute("usuario", usuario);
+                c = new Consultas();
+                objSesion.setAttribute("usuario", c.obtenerUsuario(usuario));
                 response.sendRedirect("index.jsp");
             } else {
                 response.sendRedirect("index.jsp");

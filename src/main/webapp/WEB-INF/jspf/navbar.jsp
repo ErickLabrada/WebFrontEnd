@@ -1,8 +1,15 @@
 <!-- Header -->
 
+<%@ page import = "Dominio.Usuario" %>
+
 <%
     HttpSession objSesion = request.getSession(false);
-    String usuario = (String) objSesion.getAttribute("usuario");
+    Usuario usuario = (Usuario) objSesion.getAttribute("usuario");
+
+    if (usuario != null) {
+        out.println(usuario.getNombre());
+    }
+    
 %>
 
     <nav class="navbar navbar-expand-lg navbar-light shadow">
@@ -39,10 +46,10 @@
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                         
-                        <%if (usuario.isIsAdmin()) {%>
+                        <%if (usuario != null && usuario.isIsAdmin()) {%>
                                 
                         <li class="nav-item">
-                            <a class="nav-link" href="agregar_usuario.html">Administración</a>
+                            <a class="nav-link" href="info.jsp">Administración</a>
                         </li>
                         
                         <%}%>
@@ -106,7 +113,7 @@
                         <div class="col p-3">
                             <div class="form-floating">
                                 <input type="password" name="pass" class="form-control" placeholder="Contraseï¿½a">
-                                <label for="pass">Contraseï¿½a</label>
+                                <label for="pass">Contraseña</label>
                             </div>
                         </div>
                     </div>

@@ -161,7 +161,7 @@ public class Consultas extends Conexion{
             rs = st.executeQuery();
             
             if (rs.next()) {
-                us = new Usuario(rs.getInt("Usuario_id"), rs.getString("Nombre"), "", false);
+                us = new Usuario(rs.getInt("Usuario_id"), rs.getString("Nombre"), "", rs.getBoolean("isAdmin"));
             }
             return us;
         } catch (Exception e) {
@@ -530,7 +530,7 @@ public class Consultas extends Conexion{
         ResultSet rs = null;
 
         try {
-            String consulta = "select * from usuarios where Nombre=? and Passcode=?";
+            String consulta = "select * from Usuarios where Nombre=? and Passcode=?";
             System.out.println("Consulta: " + consulta);
             pst = getConexion().prepareStatement(consulta, ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
             pst.setString(1, name);

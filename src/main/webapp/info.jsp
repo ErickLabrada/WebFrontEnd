@@ -1,3 +1,22 @@
+<%@ page import="Dominio.Usuario" %>
+
+<%
+    HttpSession objSesion = request.getSession(false);
+    Usuario usuario = (Usuario) objSesion.getAttribute("usuario");
+
+    //Por si el usuario no es administrador
+    
+    if (usuario == null) {
+        response.sendRedirect("index.jsp");
+    }
+    
+    if (! usuario.isIsAdmin()) {
+        response.sendRedirect("index.jsp");
+    }
+    
+%>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -104,7 +123,7 @@
 
                     <div class="row">
 
-                        <div class="col text-bg-secondary">${Titulo de la pagina}</div>
+                        <div class="col text-bg-secondary">{Titulo de la pagina}</div>
 
                     </div>
 

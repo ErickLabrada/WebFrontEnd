@@ -20,14 +20,14 @@ public class Conexion {
     private final String port = "3306";
     private final String dbName = "Papeleria";
     
-    private final String url = "jdbc:mysql://"+host+":"+port+"/"+dbName+"?useSSL=false";
+    private final String url = "jdbc:mysql://"+host+":"+port+"/"+dbName+"?useSSL=false&allowPublicKeyRetrieval=true";
     
     private Connection conexion;
     
     protected Conexion() {
         
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             
             this.conexion = DriverManager.getConnection(url, user, pass);
             
