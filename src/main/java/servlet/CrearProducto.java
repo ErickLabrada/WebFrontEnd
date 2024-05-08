@@ -59,7 +59,7 @@ public class CrearProducto extends HttpServlet {
             String RfileName = relativePath + "/" + uuid.toString() + ".png";
 
             for (Part part : request.getParts()) {
-                File f = new File(relativePath);
+                File f = new File(absolutePath);
 
                 if (!f.exists()) {
                     f.mkdir();
