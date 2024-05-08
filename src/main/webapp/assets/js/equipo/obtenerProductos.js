@@ -1,5 +1,5 @@
 
-const url = "/tiendita/ObtenerProductos"
+const url = "/WebFrontEnd/ObtenerProductos";
 const contenedorProductos = document.getElementById("contenedorProductos");
 
 const createCards = (producto) => {

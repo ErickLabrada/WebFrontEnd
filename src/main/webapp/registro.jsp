@@ -47,7 +47,7 @@
                         <div class="row justify-content-center">
                             <div class="col-2">
                                 <button class="btn btn-primary" onclick="enviarPeticion()">Enviar</button>
-                                <button class="btn btn-secondary" onclick="window.location.href = '/tiendita/'">Cancelar</button>
+                                <button class="btn btn-secondary" onclick="window.location.href = '/WebFrontEnd/'">Cancelar</button>
                             </div>
                         </div>
 
@@ -71,7 +71,7 @@
                 }
 
                 async function enviarPeticion() {
-                    let peticiones = new Peticion("/tiendita/CrearUsuario", obtenerDatos());
+                    let peticiones = new Peticion("/WebFrontEnd/CrearUsuario", obtenerDatos());
 
                     let data = await peticiones.enviarPeticion();
 
