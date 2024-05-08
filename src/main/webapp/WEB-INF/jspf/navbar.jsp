@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand logo h1 align-self-center" style="color: #4C3D3D;" href="index.html">
+            <a class="navbar-brand logo h1 align-self-center" style="color: #4C3D3D;" href="/tiendita">
                 Boutique Dimas
             </a>
 
@@ -30,26 +30,26 @@
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
+                            <a class="nav-link" href="/tiendita">Inicio</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="empresa.html">Empresa</a>
+                            <a class="nav-link" href="empresa.jsp">Empresa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="productos.html">Productos</a>
+                            <a class="nav-link" href="productos.jsp">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="servicios.html">Servicios</a>
+                            <a class="nav-link" href="servicios.jsp">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="contacto.jsp">Contacto</a>
                         </li>
                         
                         <%if (usuario != null && usuario.isIsAdmin()) {%>
                                 
                         <li class="nav-item">
-                            <a class="nav-link" href="info.jsp">Administración</a>
+                            <a class="nav-link" href="info.jsp">Administraciï¿½n</a>
                         </li>
                         
                         <%}%>
@@ -92,7 +92,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalLoginLabel">Inicio de sesión</h1>
+                    <h1 class="modal-title fs-5" id="modalLoginLabel">Inicio de sesiï¿½n</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
@@ -112,7 +112,7 @@
                     <div class="row">
                         <div class="col p-3">
                             <div class="form-floating">
-                                <input type="password" name="pass" class="form-control" placeholder="Contraseï¿½a">
+                                <input type="password" name="pass" class="form-control" placeholder="Contraseña">
                                 <label for="pass">Contraseña</label>
                             </div>
                         </div>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%! String nombrePagina = "Agregar usuarios"; %>
+    <%! String nombrePagina = "Editar producto"; %>
     
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title><%= nombrePagina %></title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -42,28 +42,37 @@
                                 <!-- formuario -->
                                 <div class="row">
                                     <div class="col">
-                                        <%= nombrePagina %>
+                                        Editar producto
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <form action="CrearUsuario" method="POST" class="col-8">
+                                    <form action="#" method="post" class="col-8">
                                         <div class="form-floating mb-3">
-                                            <input type="text" name="usuario" class="form-control" placeholder="Usuario">
-                                            <label for="usuario">Nombre de usuario...</label>
+                                            <input type="text" name="idProducto" class="form-control" placeholder="idProducto">
+                                            <label for="nombreProducto">ID del producto...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="password" name="pass" class="form-control" placeholder="Contraseña">
-                                            <label for="pass">Contraseña...</label>
+                                            <input type="text" name="nombre" class="form-control" placeholder="Producto">
+                                            <label for="nombreProducto">Nuevo nombre del producto...</label>
                                         </div>
-
-                                        <div class="col-2 align-self-center">
-                                            <button class="btn btn-primary btn-lg">Registrar</button>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" name="descripcion" class="form-control" placeholder="Descripción">
+                                            <label for="nombreProducto">Nueva descripción...</label>
                                         </div>
-
+                                        <div class="form-floating mb-3">
+                                            <input type="number" name="precio" class="form-control" placeholder="Precio">
+                                            <label for="nombreProducto">Nuevo precio...</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="file" name="img" class="form-control" placeholder="Img">
+                                            <label for="nombreProducto">Nueva foto...</label>
+                                        </div>
                                     </form>
 
-
+                                    <div class="col-2 align-self-center">
+                                        <button class="btn btn-primary btn-lg">Editar</button>
+                                    </div>
 
                                 </div>
                                 <!-- fin del formulario  -->

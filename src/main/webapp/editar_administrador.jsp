@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%! String nombrePagina = "Agregar usuarios"; %>
-    
+    <%! String tituloPagina = "Editar administrador"; %>
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +23,7 @@
                 <jsp:include page="/WEB-INF/jspf/administrador_sidebar.jsp" />
                 <!--fin sidebar-->
 
+
                 <!-- Contenido de la pagina -->
                 <div class="col-10 text-bg-light vh-100 text-center">
 
@@ -30,7 +31,7 @@
 
                         <div class="row">
 
-                            <div class="col text-bg-secondary"><%= nombrePagina %></div>
+                            <div class="col text-bg-secondary"><%= tituloPagina %></div>
 
                         </div>
 
@@ -42,27 +43,27 @@
                                 <!-- formuario -->
                                 <div class="row">
                                     <div class="col">
-                                        <%= nombrePagina %>
+                                        Editar administrador
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <form action="CrearUsuario" method="POST" class="col-8">
+                                    <form action="#" method="post" class="col-8">
                                         <div class="form-floating mb-3">
-                                            <input type="text" name="usuario" class="form-control" placeholder="Usuario">
+                                            <input type="text" name="usuarioActual" class="form-control"
+                                                   placeholder="UsuarioActual">
                                             <label for="usuario">Nombre de usuario...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="password" name="pass" class="form-control" placeholder="Contraseña">
-                                            <label for="pass">Contraseña...</label>
+                                            <input type="password" name="contraseñaNueva" class="form-control"
+                                                   placeholder="ContraseñaNueva">
+                                            <label for="contraseña">Nueva contraseña...</label>
                                         </div>
-
-                                        <div class="col-2 align-self-center">
-                                            <button class="btn btn-primary btn-lg">Registrar</button>
-                                        </div>
-
                                     </form>
 
+                                    <div class="col-2 align-self-center">
+                                        <button class="btn btn-primary btn-lg">Editar</button>
+                                    </div>
 
 
                                 </div>
@@ -78,7 +79,6 @@
                 </div>
             </div>
         </div>
-
     </body>
 
 </html>
