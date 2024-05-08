@@ -4,22 +4,25 @@
  */
 package servlet;
 
+import Dominio.Producto;
 import Util.Consultas;
 import Util.Data;
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
 /**
  *
  * @author natsu
  */
-public class CrearUsuario extends HttpServlet {
+@WebServlet(name = "ObtenerProductos", urlPatterns = {"/ObtenerProductos"})
+public class ObtenerProductos extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,35 +38,21 @@ public class CrearUsuario extends HttpServlet {
         response.setContentType("application/json");
         try (PrintWriter out = response.getWriter()) {
 
-            String nombre = request.getParameter("usuario");
-            String pass = request.getParameter("pass");
-            String isAdmin = request.getParameter("isAdmin");
-
             Consultas c = new Consultas();
 
-            Data<String> d = new Data();
-            GsonBuilder builder = new GsonBuilder();
-            builder.setPrettyPrinting();
+            List<Producto> productos = c.obtenerProductos();
 
-            Gson gson = builder.create();
+            Gson gson = new Gson();
 
-            if (c.agregarUsuario(nombre, pass, Boolean.parseBoolean(isAdmin))) {
-                d.status = 200;
-                d.data = "Usuario registrado correctamente";
-                response.setStatus(200);
-                response.getWriter().write(gson.toJson(d));
-            } else {
-                d.status = 404;
-                d.data = "Error al registrar al usuario";
-                response.setStatus(404);
-                response.getWriter().write(gson.toJson(d));
-            }
+            Data<List<Producto>> d = new Data();
+            d.data = productos;
+
+            out.write(gson.toJson(d));
 
         }
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the
-    // + sign on the left to edit the code.">
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *

@@ -47,7 +47,7 @@
                             </div>
 
                             <div class="row">
-                                <form action="CrearProducto" method="post" class="col-8" enctype="multipart/form-data">
+                                <form action="CrearProducto" method="POST" class="col-8" enctype="multipart/form-data" id="form">
                                     <div class="form-floating mb-3">
                                         <input type="text" name="nombre" class="form-control" placeholder="Producto">
                                         <label for="nombreProducto">Nombre del producto...</label>
@@ -72,6 +72,26 @@
 
                                 </form>
 
+                                <script>
+
+                                    let form = document.getElementById('form');
+
+                                    form.addEventListener('submit', async function (event) {
+                                        event.preventDefault();
+                                        let formData = new FormData(form);
+                                        
+                                        let response = await fetch('CrearProducto', {
+                                            method: 'POST',
+                                            body: formData
+                                        });
+                                        
+                                        let json = await response.json();
+
+                                        alert(json.data);
+
+                                    });
+
+                                </script>
 
 
                             </div>

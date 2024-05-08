@@ -8,16 +8,9 @@ package Util;
  *
  * @author natsu
  */
-public class Data {
-    
-    public String data;
+public class Data<T> {
+
+    public T data;
     public int status;
 
-    @Override
-    public String toString() {
-        return "{" + "data=" + data + ", status=" + status + '}';
-    }
-    
-    
-    
 }

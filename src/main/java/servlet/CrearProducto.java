@@ -5,26 +5,37 @@
 package servlet;
 
 import Util.Consultas;
+import Util.Data;
+import com.google.gson.Gson;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.MultipartConfig;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.Part;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.io.PrintWriter;
+import java.util.UUID;
 
 /**
  *
  * @author HP 240 G8
  */
 @WebServlet(name = "CrearProducto", urlPatterns = {"/CrearProducto"})
+@MultipartConfig(
+        fileSizeThreshold = 1024 * 1024,
+        maxFileSize = 5242880,
+        maxRequestSize = 20971520
+)
 public class CrearProducto extends HttpServlet {
 
-    private final String UPLOAD_PATH = "img_productos"+File.separator;
-    
-    
+    private final String UPLOAD_PATH = "img_productos" + File.separator;
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -38,32 +49,52 @@ public class CrearProducto extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("application/json");
         try (PrintWriter out = response.getWriter()) {
-            
+
+            String absolutePath = getServletContext().getRealPath("/") + File.separator + "img_productos";
+            String relativePath = "img_productos";
+
+            UUID uuid = UUID.randomUUID();
+
+            String AfileName = absolutePath + File.separator + uuid.toString() + ".png";
+            String RfileName = relativePath + "/" + uuid.toString() + ".png";
+
+            for (Part part : request.getParts()) {
+                File f = new File(relativePath);
+
+                if (!f.exists()) {
+                    f.mkdir();
+                }
+
+                InputStream is = part.getInputStream();
+
+                OutputStream os = new FileOutputStream(new File(AfileName));
+
+                is.transferTo(os);
+
+            }
+
             String nombre = request.getParameter("nombre");
             String descripcion = request.getParameter("descripcion");
             String precio = request.getParameter("precio");
-            
-            String relativePath = getServletContext().getRealPath("")+File.separator+UPLOAD_PATH;
-            
-            for (Part part : request.getParts()) {
-                
-                part.write(relativePath+File.separator+ Math.ceil(Math.random() * 100));
-                
-            }
-            
-            
             Consultas c = new Consultas();
-            
-            if (c.agregarProducto(nombre, descripcion, "", Float.parseFloat(precio))) {
-                response.sendRedirect("exitoRegistro.jsp");
+
+            Gson gson = new Gson();
+
+            Data<String> d = new Data();
+
+            if (c.agregarProducto(nombre, descripcion, RfileName, Float.parseFloat(precio))) {
+                d.data = "Producto agregado con exito";
             } else {
-                response.sendRedirect("errorRegistro.jsp");
+                d.data = "Error al agregar el producto";
             }
-            
+
+            out.write(gson.toJson(d));
+
         }
+
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+// <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *
