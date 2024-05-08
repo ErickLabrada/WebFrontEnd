@@ -5,6 +5,8 @@
 package servlet;
 
 import Util.Consultas;
+import Util.Data;
+import com.google.gson.Gson;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -31,22 +33,27 @@ public class EditarUsuario extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
+        response.setContentType("application/json");
         try (PrintWriter out = response.getWriter()) {
-            
+
             String oldName = request.getParameter("usuarioActual");
             String newName = request.getParameter("usuarioNuevo");
-            String newPass = request.getParameter("contraseñaNueva");
+            String newPass = request.getParameter("newPass");
             String isAdmin = request.getParameter("isAdmin");
-            
+
             Consultas c = new Consultas();
-            
-            if (c.editarUsuario(oldName, newName, newPass, Boolean.valueOf(isAdmin))) {
-                response.sendRedirect("exitoEdicion.jsp");
+
+            Data<String> d = new Data();
+
+            if (c.editarUsuario(oldName, newName, newPass, Boolean.parseBoolean(isAdmin))) {
+                d.data = "Usuario editado con exito";
             } else {
-                response.sendRedirect("errorEdicion.jsp");
+                d.data = "Error al editar al usuario";
             }
-            
+
+            Gson g = new Gson();
+            out.write(g.toJson(d));
+
         }
     }
 

@@ -48,7 +48,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <form action="#" method="post" class="col-8">
+                                    <form action="EditarUsuario" method="POST" class="col-8" id="form">
                                         <div class="form-floating mb-3">
                                             <input type="text" name="usuarioActual" class="form-control"
                                                    placeholder="UsuarioActual">
@@ -60,7 +60,7 @@
                                             <label for="usuario">Nuevo nombre de usuario...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="password" name="contraseñaNueva" class="form-control"
+                                            <input type="password" name="newPass" class="form-control"
                                                    placeholder="ContraseñaNueva">
                                             <label for="contraseña">Nueva contraseña...</label>
                                         </div>
@@ -70,14 +70,33 @@
                                             <input class="form-check-input" type="checkbox" id="adminRole" name="isAdmin"
                                                    value="true" checked>
                                         </div>
-
-
+                                        <div class="col-2 align-self-center">
+                                            <input value="Editar" class="btn btn-primary btn-lg" type="submit" >
+                                        </div>
                                     </form>
 
-                                    <div class="col-2 align-self-center">
-                                        <button class="btn btn-primary btn-lg">Editar</button>
-                                    </div>
+                                    
 
+
+                                    <script>
+
+                                        const form = document.getElementById('form');
+
+                                        form.addEventListener("submit", async (e) => {
+                                            e.preventDefault();
+                                            const formData = new FormData(form);
+                                            const response = await fetch('EditarUsuario', {
+                                                method: 'POST',
+                                                headers: {
+                                                    'Content-Type': 'application/x-www-form-urlencoded'
+                                                },
+                                                body: new URLSearchParams(formData).toString()
+                                            });
+                                            const data = await response.json();
+                                            alert(data.data);
+                                        });
+
+                                    </script>
 
                                 </div>
                                 <!-- fin del formulario  -->

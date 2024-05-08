@@ -5,6 +5,8 @@
 package servlet;
 
 import Util.Consultas;
+import Util.Data;
+import com.google.gson.Gson;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -12,7 +14,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-
 
 /**
  *
@@ -32,21 +33,24 @@ public class EliminarUsuario extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
+        response.setContentType("application/json");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-
-            String id = request.getParameter("usuario");
             
+            String id = request.getParameter("usuario");
             
             Consultas c = new Consultas();
             
+            Data<String> d = new Data();
+            Gson g = new Gson();
+            
             if (c.eliminarUsuario(id)) {
-                response.sendRedirect("exitoEliminacion.jsp");
+                d.data = "Eliminacion correcta";
             } else {
-                response.sendRedirect("errorEliminacion.jsp");
+                d.data = "Error al eliminar";
             }
             
+            out.write(g.toJson(d));
             
         }
     }

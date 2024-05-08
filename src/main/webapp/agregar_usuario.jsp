@@ -47,7 +47,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <form action="CrearUsuario" method="POST" class="col-8">
+                                    <form action="CrearUsuario" method="POST" class="col-8" id="form">
                                         <div class="form-floating mb-3">
                                             <input type="text" name="usuario" class="form-control" placeholder="Usuario">
                                             <label for="usuario">Nombre de usuario...</label>
@@ -63,7 +63,29 @@
 
                                     </form>
 
+                                    <script>
 
+                                        const form = document.querySelector('form');
+
+                                        form.addEventListener("submit", async (e) => {
+                                            e.preventDefault();
+                                            const formData = new FormData(form);
+                                            console.log(new URLSearchParams(formData).toString());
+                                            let res = await fetch('CrearUsuario', {
+                                                method: 'POST',
+                                                headers: {
+                                                    'Content-Type': 'application/x-www-form-urlencoded'
+                                                },
+                                                body: new URLSearchParams(formData).toString()
+                                            });
+                                                
+                                            let json = await res.json();
+
+                                            alert(json.data);
+
+                                        });
+
+                                    </script>
 
                                 </div>
                                 <!-- fin del formulario  -->

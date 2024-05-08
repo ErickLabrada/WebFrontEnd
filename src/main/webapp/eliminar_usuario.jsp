@@ -48,16 +48,41 @@
                             </div>
 
                             <div class="row">
-                                <form action="#" method="post" class="col-8">
+                                <form action="EliminarUsuario" method="post" class="col-8" id="form">
                                     <div class="form-floating mb-3">
                                         <input type="text" name="usuario" class="form-control" placeholder="Usuario">
                                         <label for="usuario">Nombre de usuario...</label>
                                     </div>
+
+                                    <div class="col-2 align-self-center">
+                                        <input type="submit" class="btn btn-primary btn-lg" value="Eliminar">
+                                    </div>
+
                                 </form>
     
-                                <div class="col-2 align-self-center">
-                                    <button class="btn btn-primary btn-lg">Eliminar</button>
-                                </div>
+                                <script>
+
+                                    const form = document.getElementById('form');
+
+                                    form.addEventListener('submit', async (e) => {
+                                        e.preventDefault();
+                                        const formData = new FormData(form);
+                                        
+                                        let res = await fetch('EliminarUsuario', {
+                                            method: 'POST',
+                                            headers: {
+                                                'Content-Type': 'application/x-www-form-urlencoded'
+                                            },
+                                            body: new URLSearchParams(formData).toString(),
+                                        })
+                                        
+                                        let json = await res.json();
+
+                                        alert(json.data);
+
+                                    });
+
+                                </script>
 
                             </div>
                             <!-- fin del formulario  -->
