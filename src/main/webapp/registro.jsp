@@ -36,7 +36,7 @@
                                 </div>
         
                                 <div class="form-floating mb-3" >
-                                    <input class="form-control" type="password" placeholder="ContraseÃ±a" name="pass" id="pass">
+                                    <input class="form-control" type="password" placeholder="Contraseña" name="pass" id="pass">
                                     <label for="pass">Contraseña</label>
                                 </div>
         

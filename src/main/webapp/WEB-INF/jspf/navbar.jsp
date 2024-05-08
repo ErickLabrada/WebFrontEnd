@@ -49,7 +49,7 @@
                         <%if (usuario != null && usuario.isIsAdmin()) {%>
                                 
                         <li class="nav-item">
-                            <a class="nav-link" href="info.jsp">Administraciï¿½n</a>
+                            <a class="nav-link" href="info.jsp">Administración</a>
                         </li>
                         
                         <%}%>
@@ -92,7 +92,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalLoginLabel">Inicio de sesiï¿½n</h1>
+                    <h1 class="modal-title fs-5" id="modalLoginLabel">Inicio de sesión</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
@@ -126,7 +126,7 @@
                     
                 </form>
                 
-                <a href="/tiendita/registro.jsp"> registrarse! </a>
+                <a href="/tiendita/registro.jsp"> ¡registrarse! </a>
                 
             </div>
         </div>

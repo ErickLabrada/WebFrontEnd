@@ -67,11 +67,11 @@
             <div class="row">
 
                 <div class="col-lg-3">
-                    <h1 class="h2 pb-4">CategorÃ­as</h1>
+                    <h1 class="h2 pb-4">Categorías</h1>
                     <ul class="list-unstyled templatemo-accordion">
                         <li class="pb-3">
                             <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                                PapelerÃ­a
+                                Papelerí­a
                                 <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
                             </a>
                             <ul class="collapse show list-unstyled pl-3">

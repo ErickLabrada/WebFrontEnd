@@ -78,13 +78,13 @@ https://templatemo.com/tm-559-zay-shop
         <div class="container">
             <div class="row align-items-center py-5">
                 <div class="col-md-8 text-black">
-                    <h1>Papeler√≠a</h1>
+                    <h1>PapelerÌ≠a</h1>
                     <p>
                         <br>
-                        Encuentra todo lo que necesitas para el trabajo y el estudio en nuestra secci√≥n de papeler√≠a. Desde l√°pices y bol√≠grafos hasta material de oficina personalizado. En nuestra secci√≥n de papeler√≠a, te ofrecemos mucho m√°s que simples suministros de oficina. Es el lugar donde la creatividad se encuentra con la funcionalidad, proporcion√°ndote todo lo necesario para expresarte y tener √©xito en tus proyectos.
-
-
-
+                         Encuentra todo lo que necesitas para el trabajo y el estudio en nuestra secciÛn de papelerÌa. 
+                         Desde l·pices y bolÌgrafos hasta material de oficina personalizado. En nuestra secciÛn de papelerÌa,
+                         te ofrecemos mucho m·s que simples suministros de oficina. Es el lugar donde la creatividad se encuentra
+                         con la funcionalidad, proporcion·ndote todo lo necesario para expresarte y tener Èxito en tus proyectos.
 
                     </p>
                 </div>
@@ -105,8 +105,10 @@ https://templatemo.com/tm-559-zay-shop
                     <h1>Boutique</h1>
                     <p>
                         <br>
-                        Descubre las √∫ltimas tendencias de moda y estilo en nuestra boutique. Desde ropa elegante y accesorios hasta calzado de moda, te ayudaremos a encontrar el look perfecto para cualquier ocasi√≥n. Adem√°s, nuestro equipo de expertos en moda est√° aqu√≠ para brindarte asesoramiento personalizado y garantizar que te veas y te sientas incre√≠ble.
-
+                        Descubre las ˙ltimas tendencias de moda y estilo en nuestra boutique. 
+                        Desde ropa elegante y accesorios hasta calzado de moda, te ayudaremos a encontrar 
+                        el look perfecto para cualquier ocasiÛn. Adem·s, nuestro equipo de expertos
+                        en moda est· aquÌ para brindarte asesoramiento personalizado y garantizar que te veas y te sientas increÌble.
 
                     </p>
                 </div>
@@ -122,8 +124,9 @@ https://templatemo.com/tm-559-zay-shop
                     <h1>Sorteos</h1>
                     <p>
                         <br>
-                        No te pierdas la oportunidad de ganar premios emocionantes en nuestros sorteos y rifas! Participa para tener la oportunidad de llevarte a casa incre√≠bles regalos, descuentos especiales y mucho m√°s. Es nuestra manera de agradecer tu apoyo y fomentar la diversi√≥n y la emoci√≥n entre nuestra comunidad de clientes.
-
+                        No te pierdas la oportunidad de ganar emocionantes premios en nuestros sorteos y rifas. 
+                        Participa para tener la oportunidad de llevarte a casa increÌbles regalos, descuentos especiales y mucho m·s. 
+                        Es nuestra manera de agradecer tu apoyo y fomentar la diversiÛn y la emociÛn entre nuestra comunidad de clientes
 
                     </p>
                 </div>

@@ -51,13 +51,13 @@
                                     <form action="#" method="post" class="col-8">
                                         <div class="form-floating mb-3">
                                             <input type="text" name="usuarioActual" class="form-control"
-                                                   placeholder="UsuarioActual">
+                                                   placeholder="Usuario actual">
                                             <label for="usuario">Nombre de usuario...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="password" name="contraseÃ±aNueva" class="form-control"
-                                                   placeholder="ContraseÃ±aNueva">
-                                            <label for="contraseÃ±a">Nueva contraseÃ±a...</label>
+                                            <input type="password" name="contraseñaNueva" class="form-control"
+                                                   placeholder="Contraseña Nueva">
+                                            <label for="contraseña">Nueva contraseña...</label>
                                         </div>
                                     </form>
 

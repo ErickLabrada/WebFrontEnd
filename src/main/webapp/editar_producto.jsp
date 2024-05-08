@@ -57,8 +57,8 @@
                                             <label for="nombreProducto">Nuevo nombre del producto...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="text" name="descripcion" class="form-control" placeholder="DescripciÃ³n">
-                                            <label for="nombreProducto">Nueva descripciÃ³n...</label>
+                                            <input type="text" name="descripcion" class="form-control" placeholder="Descripción">
+                                            <label for="nombreProducto">Nueva descripción...</label>
                                         </div>
                                         <div class="form-floating mb-3">
                                             <input type="number" name="precio" class="form-control" placeholder="Precio">

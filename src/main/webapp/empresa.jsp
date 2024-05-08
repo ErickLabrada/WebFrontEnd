@@ -80,11 +80,10 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="col-md-8 text-black">
                     <h1>Sobre nosotros</h1>
                     <p>
-                        Boutique Dimas, no es solo una tienda, Â¡es el centro de la organizaciÃ³n y la comida! Imagina un
-                        lugar donde puedes encontrar desde el lÃ¡piz mÃ¡s puntiagudo hasta la lata de frijoles mÃ¡s
-                        deliciosa.
-                        Las cradoras y organizadoras, mantienen un establecimiento donde cada artÃ­culo cumple con tus
-                        aspectativas. Â¡Ven a Boutique Dimas, donde comprar es una aventura!
+                        Boutique Dimas no es solo una tienda, ¡es el centro de la organización y la comida! 
+                        Imagina un lugar donde puedes encontrar desde el lápiz más puntiagudo 
+                        hasta la lata de frijoles más deliciosa. Las creadoras y organizadoras mantienen un establecimiento 
+                        donde cada artículo cumple con tus expectativas. ¡Ven a Boutique Dimas, donde comprar es una aventura!
                     </p>
                 </div>
                 <div class="col-md-4">
@@ -125,14 +124,14 @@ https://templatemo.com/tm-559-zay-shop
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-center" style="color: #C07F00;"><i class="fa fa-percent"></i></div>
-                    <h2 class="h5 mt-4 text-center">Descuentos por mayoria</h2>
+                    <h2 class="h5 mt-4 text-center">Descuentos por mayoreo</h2>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-center" style="color: #C07F00;" ><i class="fa fa-user"></i></div>
-                    <h2 class="h5 mt-4 text-center">Servicio de 12 horas 8 a 8</h2>
+                    <h2 class="h5 mt-4 text-center">Servicio de 12 horas (8am a 8pm)</h2>
                 </div>
             </div>
         </div>

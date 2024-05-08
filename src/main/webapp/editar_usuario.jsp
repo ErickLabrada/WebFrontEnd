@@ -51,22 +51,22 @@
                                     <form action="EditarUsuario" method="POST" class="col-8" id="form">
                                         <div class="form-floating mb-3">
                                             <input type="text" name="usuarioActual" class="form-control"
-                                                   placeholder="UsuarioActual">
+                                                   placeholder="Usuario actual">
                                             <label for="usuario">Nombre de usuario actual...</label>
                                         </div>
                                         <div class="form-floating mb-3">
                                             <input type="text" name="usuarioNuevo" class="form-control"
-                                                   placeholder="UsuarioNuevo">
+                                                   placeholder="Usuario nuevo">
                                             <label for="usuario">Nuevo nombre de usuario...</label>
                                         </div>
                                         <div class="form-floating mb-3">
                                             <input type="password" name="newPass" class="form-control"
-                                                   placeholder="ContraseñaNueva">
-                                            <label for="contraseña">Nueva contraseña...</label>
+                                                   placeholder="Contrase�a nueva">
+                                            <label for="contraseña">Nueva contrase�a...</label>
                                         </div>
                                         <div class="form-check form-switch d-flex justify-content-between">
                                             <label class="form-check-label text-start" for="adminRole">Dar permisos de
-                                                administración</label>
+                                                administraci�n</label>
                                             <input class="form-check-input" type="checkbox" id="adminRole" name="isAdmin"
                                                    value="true" checked>
                                         </div>

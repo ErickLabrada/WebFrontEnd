@@ -80,10 +80,9 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Start Content Page -->
     <div class="container-fluid py-5" style="background-color: #FFD95A;">
         <div class="col-md-6 m-auto text-center">
-            <h1 class="h1">Contactanos</h1>
+            <h1 class="h1">Contáctanos</h1>
             <p>
-                Puedes asistir a nuestra tienda de abarrotes situada en Blvd Camino Real #250, o puedes mandarnos un
-                correo electronico llenando el siguiente formulario
+                Puedes asistir a nuestra tienda de abarrotes situada en Blvd Camino Real #250, o puedes mandarnos un correo electrónico llenando el siguiente formulario.
             </p>
         </div>
     </div>
@@ -107,14 +106,14 @@ https://templatemo.com/tm-559-zay-shop
                         <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Nombre">
                     </div>
                     <div class="form-group col-md-6 mb-3">
-                        <label for="inputemail">Correo electronico</label>
+                        <label for="inputemail">Correo electrónico</label>
                         <input type="email" class="form-control mt-1" id="email" name="email"
-                            placeholder="Correo electronico">
+                            placeholder="Correo electrónico">
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="inputsubject">Titulo</label>
-                    <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Titulo">
+                    <label for="inputsubject">Título</label>
+                    <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Título">
                 </div>
                 <div class="mb-3">
                     <label for="inputmessage">Mensaje</label>

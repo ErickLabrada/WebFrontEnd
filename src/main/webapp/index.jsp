@@ -150,7 +150,7 @@ https://templatemo.com/tm-559-zay-shop
         <div class="row">
             <div class="col-12 col-md-4 p-5 mt-3">
                 <a href="#"><img src="./assets/img/category_img_01.jpg" class="rounded-circle img-fluid border"></a>
-                <h5 class="text-center mt-3 mb-3">Utiles escolares</h5>
+                <h5 class="text-center mt-3 mb-3">Útiles escolares</h5>
                 <p class="text-center"><a class="btn" style="background-color: #C07F00; color: white;">Ver tienda</a></p>
             </div>
             <div class="col-12 col-md-4 p-5 mt-3">
@@ -196,10 +196,13 @@ https://templatemo.com/tm-559-zay-shop
                                 </li>
                                 <li class="text-muted text-right">$5.00</li>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Lapiz</a>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Lápiz</a>
                             <p class="card-text">
-                                Textura suave: Elimina marcas y errores de forma limpia y sin dañar el papel. Precisión: Borra con eficacia trazos de lápiz sin dejar residuos ni manchas. Durabilidad: Construido con materiales de alta calidad que garantizan una larga vida útil. Tamaño conveniente: Compacto y fácil de manejar para un uso cómodo y portátil. Ideal para múltiples usos: Perfecto para estudiantes, artistas y profesionales que requieren una corrección precisa.
-                            </p>
+                                Su diseño funcional incluye una punta suave que permite una escritura fluida y precisa, 
+                                eliminando marcas y errores de forma limpia y sin dañar el papel. Además, su tamaño conveniente
+                                lo hace perfecto para llevar a todas partes, ya sea en tu estuche, bolsillo o mochila. 
+                                Ya sea que seas un estudiante, un artista o un profesional, es la opción ideal para aquellos
+                                que buscan calidad, comodidad y precisión en cada trazo."                            </p>
                             <p class="text-muted">Reviews (24)</p>
                         </div>
                     </div>

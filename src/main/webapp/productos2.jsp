@@ -63,7 +63,7 @@ https://templatemo.com/tm-559-zay-shop
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalLoginLabel">Inicio de sesiÃ³n</h1>
+                    <h1 class="modal-title fs-5" id="modalLoginLabel">Inicio de sesión</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
@@ -83,8 +83,8 @@ https://templatemo.com/tm-559-zay-shop
                     <div class="row">
                         <div class="col p-3">
                             <div class="form-floating">
-                                <input type="password" name="pass" class="form-control" placeholder="ContraseÃ±a">
-                                <label for="pass">ContraseÃ±a</label>
+                                <input type="password" name="pass" class="form-control" placeholder="Contraseña">
+                                <label for="pass">Contraseña</label>
                             </div>
                         </div>
                     </div>
@@ -108,7 +108,7 @@ https://templatemo.com/tm-559-zay-shop
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalLoginLabel">Inicio de sesiÃ³n</h1>
+                    <h1 class="modal-title fs-5" id="modalLoginLabel">Inicio de sesión</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
@@ -128,8 +128,8 @@ https://templatemo.com/tm-559-zay-shop
                     <div class="row">
                         <div class="col p-3">
                             <div class="form-floating">
-                                <input type="password" name="pass" class="form-control" placeholder="ContraseÃ±a">
-                                <label for="pass">ContraseÃ±a</label>
+                                <input type="password" name="pass" class="form-control" placeholder="Contraseña">
+                                <label for="pass">Contraseña</label>
                             </div>
                         </div>
                     </div>
@@ -154,11 +154,11 @@ https://templatemo.com/tm-559-zay-shop
         <div class="row">
 
             <div class="col-lg-3">
-                <h1 class="h2 pb-4">CategorÃ­as</h1>
+                <h1 class="h2 pb-4">Categorías</h1>
                 <ul class="list-unstyled templatemo-accordion">
                     <li class="pb-3">
                         <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            PapelerÃ­a
+                            Papelerí­a
                             <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
                         <ul class="collapse show list-unstyled pl-3">
@@ -230,7 +230,7 @@ https://templatemo.com/tm-559-zay-shop
                                 </div>
                             </div>
                             <div class="card-body">
-                                <a href="shop-single.html" class="h3 text-decoration-none">Sabritas clasicas</a>
+                                <a href="shop-single.html" class="h3 text-decoration-none">Sabritas clásicas</a>
                                 <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                                     <li class="pt-2">
                                         <span
@@ -276,7 +276,7 @@ https://templatemo.com/tm-559-zay-shop
                                 </div>
                             </div>
                             <div class="card-body">
-                                <a href="shop-single.html" class="h3 text-decoration-none">Boligrafos (8 pz)</a>
+                                <a href="shop-single.html" class="h3 text-decoration-none">Bolígrafos (8 pz)</a>
                                 <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                                     <li class="pt-2">
                                         <span
@@ -512,7 +512,7 @@ https://templatemo.com/tm-559-zay-shop
             <div class="row">
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 border-bottom pb-3 border-light logo" style="color: #fff;">PapelerÃ­a & Boutique Dimas
+                    <h2 class="h2 border-bottom pb-3 border-light logo" style="color: #fff;">Papelerí­a & Boutique Dimas
                     </h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
@@ -533,9 +533,9 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Utiles escolares</a></li>
+                        <li><a class="text-decoration-none" href="#">Útiles escolares</a></li>
                         <li><a class="text-decoration-none" href="#">Material de arte</a></li>
-                        <li><a class="text-decoration-none" href="#">PapelerÃ­a</a></li>
+                        <li><a class="text-decoration-none" href="#">Papelerí­a</a></li>
                         <li><a class="text-decoration-none" href="#">Bolsos</a></li>
                         <li><a class="text-decoration-none" href="#">Accesorios</a></li>
                         <li><a class="text-decoration-none" href="#">Calzado</a></li>
@@ -543,7 +543,7 @@ https://templatemo.com/tm-559-zay-shop
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">MÃ¡s informaciÃ³n</h2>
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Más información</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li><a class="text-decoration-none" href="index.html">Inicio</a></li>
                         <li><a class="text-decoration-none" href="empresa.html">Sobre nosotros</a></li>
@@ -577,9 +577,9 @@ https://templatemo.com/tm-559-zay-shop
                         <p class="text-left text-light">
                             Copyright &copy; 2023 Equipo Michines del desierto <br>
                             Rodriguez Valenzuela Rosa(Alan),
-                            Erick Antonio Labrada Rodriguez,
+                            Erick Antonio Labrada Rodríguez,
                             Fernando Tadeo Zayas Bernal,
-                            Roberto Contreras MartÃ­nez,
+                            Roberto Contreras Martí­nez,
                         </p>
                     </div>
                 </div>

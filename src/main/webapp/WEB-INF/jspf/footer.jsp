@@ -4,7 +4,7 @@
         <div class="row">
 
             <div class="col-md-4 pt-5">
-                <h2 class="h2 border-bottom pb-3 border-light logo" style="color: #fff;">PapelerÃ­a & Boutique Dimas
+                <h2 class="h2 border-bottom pb-3 border-light logo" style="color: #fff;">Papelerí­a & Boutique Dimas
                 </h2>
                 <ul class="list-unstyled text-light footer-link-list">
                     <li>
@@ -25,9 +25,9 @@
             <div class="col-md-4 pt-5">
                 <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none" href="#">Utiles escolares</a></li>
+                    <li><a class="text-decoration-none" href="#">Útiles escolares</a></li>
                     <li><a class="text-decoration-none" href="#">Material de arte</a></li>
-                    <li><a class="text-decoration-none" href="#">PapelerÃ­a</a></li>
+                    <li><a class="text-decoration-none" href="#">Papelerí­a</a></li>
                     <li><a class="text-decoration-none" href="#">Bolsos</a></li>
                     <li><a class="text-decoration-none" href="#">Accesorios</a></li>
                     <li><a class="text-decoration-none" href="#">Calzado</a></li>
@@ -35,7 +35,7 @@
             </div>
 
             <div class="col-md-4 pt-5">
-                <h2 class="h2 text-light border-bottom pb-3 border-light">MÃ¡s informaciÃ³n</h2>
+                <h2 class="h2 text-light border-bottom pb-3 border-light">Más información</h2>
                 <ul class="list-unstyled text-light footer-link-list">
                     <li><a class="text-decoration-none" href="index.html">Inicio</a></li>
                     <li><a class="text-decoration-none" href="empresa.html">Sobre nosotros</a></li>
@@ -69,9 +69,9 @@
                     <p class="text-left text-light">
                         Copyright &copy; 2023 Equipo Michines del desierto <br>
                         Rodriguez Valenzuela Rosa(Alan),
-                        Erick Antonio Labrada Rodriguez,
+                        Erick Antonio Labrada Rodríguez,
                         Fernando Tadeo Zayas Bernal,
-                        Roberto Contreras MartÃ­nez,
+                        Roberto Contreras Martí­nez,
                     </p>
                 </div>
             </div>
