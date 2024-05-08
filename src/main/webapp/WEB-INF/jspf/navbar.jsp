@@ -126,7 +126,7 @@
                     
                 </form>
                 
-                <a href="/registro.jsp"> ¡registrarse! </a>
+                <a href="registro.jsp"> ¡registrarse! </a>
                 
             </div>
         </div>
