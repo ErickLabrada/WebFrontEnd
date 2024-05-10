@@ -120,16 +120,20 @@
                         </div>
                     </div>
 
-                    <div class="row justify-content-end">
-                        <div class="col-2 order-last pr-3">
-                            <button class="btn btn-primary">Iniciar</button>
+                    <div class="row justify-content">
+                        <div class="order-last pr-3">
+                            <button class="btn btn-primary">Iniciar Sesión</button>
                         </div>
                     </div>
                     
                 </form>
-                
-                <a href="registro.jsp"> ¡registrarse! </a>
-                
+                <div class="container modal-body text-center">
+                    <div class="row justify-content">
+                        <div class="order-last">
+                            <a class="btn btn-secondary" href="registro.jsp">Registrarse</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
