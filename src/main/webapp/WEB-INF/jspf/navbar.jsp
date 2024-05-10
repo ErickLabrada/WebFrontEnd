@@ -6,16 +6,13 @@
     HttpSession objSesion = request.getSession(false);
     Usuario usuario = (Usuario) objSesion.getAttribute("usuario");
 
-    if (usuario != null) {
-        out.println(usuario.getNombre());
-    }
     
 %>
 
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand logo h1 align-self-center" style="color: #4C3D3D;" href="/tiendita">
+            <a class="navbar-brand logo h1 align-self-center" style="color: #4C3D3D;" href="/WebFrontEnd">
                 Boutique Dimas
             </a>
 
@@ -77,6 +74,11 @@
                     <button class="btn nav-icon position-relative text-decoration-none" data-bs-target="#modalLogin"
                         data-bs-toggle="modal">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <%
+                            if (usuario != null) {
+                                out.println(usuario.getNombre());
+                            }
+                        %>
                     </button>
                 </div>
             </div>
