@@ -6,16 +6,13 @@
     HttpSession objSesion = request.getSession(false);
     Usuario usuario = (Usuario) objSesion.getAttribute("usuario");
 
-    if (usuario != null) {
-        out.println(usuario.getNombre());
-    }
     
 %>
 
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand logo h1 align-self-center" style="color: #4C3D3D;" href="/tiendita">
+            <a class="navbar-brand logo h1 align-self-center" style="color: #4C3D3D;" href="/WebFrontEnd">
                 Boutique Dimas
             </a>
 
@@ -77,6 +74,11 @@
                     <button class="btn nav-icon position-relative text-decoration-none" data-bs-target="#modalLogin"
                         data-bs-toggle="modal">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <%
+                            if (usuario != null) {
+                                out.println(usuario.getNombre());
+                            }
+                        %>
                     </button>
                 </div>
             </div>
@@ -118,16 +120,20 @@
                         </div>
                     </div>
 
-                    <div class="row justify-content-end">
-                        <div class="col-2 order-last pr-3">
-                            <button class="btn btn-primary">Iniciar</button>
+                    <div class="row justify-content">
+                        <div class="order-last pr-3">
+                            <button class="btn btn-primary">Iniciar Sesi�n</button>
                         </div>
                     </div>
                     
                 </form>
-                
-                <a href="registro.jsp"> �registrarse! </a>
-                
+                <div class="container modal-body text-center">
+                    <div class="row justify-content">
+                        <div class="order-last">
+                            <a class="btn btn-secondary" href="registro.jsp">Registrarse</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
