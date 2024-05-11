@@ -12,6 +12,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="assets/js/equipo/Datos.js"></script>
     </head>
 
     <body>
@@ -61,12 +62,12 @@
                                         </div>
                                         <div class="form-floating mb-3">
                                             <input type="password" name="newPass" class="form-control"
-                                                   placeholder="Contraseña nueva">
-                                            <label for="contraseÃ±a">Nueva contraseña...</label>
+                                                   placeholder="Contraseï¿½a nueva">
+                                            <label for="contraseÃ±a">Nueva contraseï¿½a...</label>
                                         </div>
                                         <div class="form-check form-switch d-flex justify-content-between">
                                             <label class="form-check-label text-start" for="adminRole">Dar permisos de
-                                                administración</label>
+                                                administraciï¿½n</label>
                                             <input class="form-check-input" type="checkbox" id="adminRole" name="isAdmin"
                                                    value="true" checked>
                                         </div>
@@ -85,7 +86,7 @@
                                         form.addEventListener("submit", async (e) => {
                                             e.preventDefault();
                                             const formData = new FormData(form);
-                                            const response = await fetch('EditarUsuario', {
+                                            const response = await fetch(DATOS.URL.actualizarUsuario, {
                                                 method: 'POST',
                                                 headers: {
                                                     'Content-Type': 'application/x-www-form-urlencoded'

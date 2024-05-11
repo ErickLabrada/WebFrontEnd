@@ -12,6 +12,11 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+        <script src="assets/js/equipo/Datos.js"></script>
+        <script src="assets/js/equipo/peticiones.js"></script>
+        <script src="assets/js/equipo/editarProducto.js" defer></script>
+
     </head>
 
     <body>
@@ -47,32 +52,35 @@
                                 </div>
 
                                 <div class="row">
-                                    <form action="#" method="post" class="col-8">
+                                    <form action="#" method="post" class="col-8" id="form" enctype="multipart/form-data">
                                         <div class="form-floating mb-3">
-                                            <input type="text" name="idProducto" class="form-control" placeholder="idProducto">
+                                            <input id="idProducto" type="text" name="idProducto" class="form-control" placeholder="idProducto">
                                             <label for="nombreProducto">ID del producto...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="text" name="nombre" class="form-control" placeholder="Producto">
+                                            <input id="nombre" type="text" name="nombre" class="form-control" placeholder="Producto">
                                             <label for="nombreProducto">Nuevo nombre del producto...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="text" name="descripcion" class="form-control" placeholder="Descripción">
-                                            <label for="nombreProducto">Nueva descripción...</label>
+                                            <input id="descripcion" type="text" name="descripcion" class="form-control" placeholder="Descripciï¿½n">
+                                            <label for="nombreProducto">Nueva descripciï¿½n...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="number" name="precio" class="form-control" placeholder="Precio">
+                                            <input id="precio" type="number" name="precio" class="form-control" placeholder="Precio">
                                             <label for="nombreProducto">Nuevo precio...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="file" name="img" class="form-control" placeholder="Img">
+                                            <input id="img" type="file" name="img" class="form-control" placeholder="Img">
                                             <label for="nombreProducto">Nueva foto...</label>
                                         </div>
+
+                                        <div class="col-2 align-self-center">
+                                            <input type="submit" value="Editar" class="btn btn-primary btn-lg">
+                                        </div>
+
                                     </form>
 
-                                    <div class="col-2 align-self-center">
-                                        <button class="btn btn-primary btn-lg">Editar</button>
-                                    </div>
+                                    
 
                                 </div>
                                 <!-- fin del formulario  -->

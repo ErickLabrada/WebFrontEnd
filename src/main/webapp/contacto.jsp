@@ -32,29 +32,8 @@ https://templatemo.com/tm-559-zay-shop
 </head>
 
 <body>
-    <!-- Start Top Nav -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
-        <div class="container text-light">
-            <div class="w-100 d-flex justify-content-between">
-                <div>
-                    <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none"
-                        href="mailto:dymas-@hotmail.com">dymas-@hotmail.com</a>
-                    <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:+64 4-202 5553">+64 4-202
-                        5553</a>
-                </div>
-                <div>
-                    <a class="text-light" href="https://www.facebook.com/PapeleriayBoutiqueDimas" target="_blank"
-                        rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://www.instagram.com/papeleriayboutiquedimas/" target="_blank"><i
-                            class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Close Top Nav -->
-
+    
+    <jsp:include page="/WEB-INF/jspf/topnav.jsp" />
     <jsp:include page="/WEB-INF/jspf/navbar.jsp" />
 
     <!-- Modal busqueda -->
@@ -80,9 +59,9 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Start Content Page -->
     <div class="container-fluid py-5" style="background-color: #FFD95A;">
         <div class="col-md-6 m-auto text-center">
-            <h1 class="h1">Contáctanos</h1>
+            <h1 class="h1">Contï¿½ctanos</h1>
             <p>
-                Puedes asistir a nuestra tienda de abarrotes situada en Blvd Camino Real #250, o puedes mandarnos un correo electrónico llenando el siguiente formulario.
+                Puedes asistir a nuestra tienda de abarrotes situada en Blvd Camino Real #250, o puedes mandarnos un correo electrï¿½nico llenando el siguiente formulario.
             </p>
         </div>
     </div>
@@ -106,14 +85,14 @@ https://templatemo.com/tm-559-zay-shop
                         <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Nombre">
                     </div>
                     <div class="form-group col-md-6 mb-3">
-                        <label for="inputemail">Correo electrónico</label>
+                        <label for="inputemail">Correo electrï¿½nico</label>
                         <input type="email" class="form-control mt-1" id="email" name="email"
-                            placeholder="Correo electrónico">
+                            placeholder="Correo electrï¿½nico">
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="inputsubject">Título</label>
-                    <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Título">
+                    <label for="inputsubject">Tï¿½tulo</label>
+                    <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Tï¿½tulo">
                 </div>
                 <div class="mb-3">
                     <label for="inputmessage">Mensaje</label>

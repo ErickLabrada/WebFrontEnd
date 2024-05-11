@@ -4,11 +4,15 @@
  */
 package Util;
 
+import Dominio.InventarioProducto;
 import Dominio.Producto;
 import Dominio.Usuario;
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -294,42 +298,29 @@ public class Consultas extends Conexion {
         return false;
     }
 
-    public boolean editarProducto(int id, String nombre, String img, String Descripcion, double precio) {
-        PreparedStatement st = null;
+    public boolean editarProducto(int id, String nombre, String img, String Descripcion, String precio) {
+        PreparedStatement st;
 
-        try {
-            String query = "UPDATE Productos SET Nombre=?, Descripcion=?, Img=?, Precio=? WHERE Producto_id=?";
+        Producto p = this.obtenerProducto(id);
 
-            st = this.getConexion().prepareStatement(query);
+        if (p == null) {
+            return false;
+        }
 
-            st.setString(1, nombre);
-            st.setString(2, Descripcion);
-            st.setString(3, img);
-            st.setDouble(4, precio);
+        try (Connection c = new Conexion().getConexion()) {
+            String query = "UPDATE Producto SET Nombre=?, Descripcion=?, Img=?, Precio=? WHERE Producto_id=?";
+
+            st = c.prepareStatement(query);
+
+            st.setString(1, nombre.equalsIgnoreCase("") ? p.getNombre() : nombre);
+            st.setString(2, Descripcion.equalsIgnoreCase("") ? p.getDescripcion() : Descripcion);
+            st.setString(3, img.equalsIgnoreCase("") ? p.getImg() : img);
+            st.setDouble(4, precio.equalsIgnoreCase("") ? p.getPrecio() : Double.parseDouble(precio));
             st.setInt(5, id);
 
             return st.executeUpdate() == 1;
-
-        } catch (Exception e) {
+        } catch (SQLException e) {
             System.out.println(e.getMessage());
-        } finally {
-
-            try {
-
-                if (st != null) {
-                    st.close();
-                }
-
-                if (this.getConexion() != null) {
-                    this.getConexion().close();
-                }
-
-            } catch (Exception e) {
-
-                System.out.println(e.getMessage());
-
-            }
-
         }
 
         return false;
@@ -389,7 +380,12 @@ public class Consultas extends Conexion {
 
             if (rs.next()) {
 
-                p = new Producto(rs.getString("Nombre"), rs.getString("Descripcion"), rs.getString("Img"), rs.getDouble("Precio"));
+                p = new Producto(rs.getInt("Producto_id"),
+                        rs.getString("Nombre"),
+                        rs.getString("Descripcion"),
+                        rs.getString("Img"),
+                        rs.getDouble("Precio")
+                );
 
             }
 
@@ -442,6 +438,7 @@ public class Consultas extends Conexion {
 
                 listaProductos.add(
                         new Producto(
+                                rs.getInt("Producto_id"),
                                 rs.getString("Nombre"),
                                 rs.getString("Descripcion"),
                                 rs.getString("Img"),
@@ -526,6 +523,46 @@ public class Consultas extends Conexion {
         }
 
         return false;
+    }
+
+    public List<InventarioProducto> obtenerInventario() {
+        PreparedStatement ps;
+        ResultSet rs;
+
+        List<InventarioProducto> inventario = new LinkedList();
+
+        try (Connection c = new Conexion().getConexion()) {
+            final String SQL = "{CALL obtenerInventario}";
+            ps = c.prepareStatement(SQL);
+
+            rs = ps.executeQuery();
+
+            while (rs.next()) {
+
+                inventario.add(
+                        new InventarioProducto(
+                                new Producto(
+                                        rs.getInt("id"),
+                                        rs.getString("nombre"),
+                                        rs.getString("descripcion"),
+                                        rs.getString("img"),
+                                        rs.getDouble("precio")
+                                ),
+                                rs.getInt("stock")
+                        )
+                );
+
+            }
+
+            inventario.forEach(stock -> {
+                System.out.println(stock.toString());
+            });
+
+        } catch (SQLException e) {
+            System.err.println(e.getMessage());
+        }
+
+        return inventario;
     }
 
     public boolean autenticacion(String name, String password) {

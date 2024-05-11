@@ -27,28 +27,8 @@ https://templatemo.com/tm-559-zay-shop
 </head>
 
 <body>
-    <!-- Start Top Nav -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
-        <div class="container text-light">
-            <div class="w-100 d-flex justify-content-between">
-                <div>
-                    <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none"
-                        href="mailto:dymas-@hotmail.com">dymas-@hotmail.com</a>
-                    <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:+64 4-202 5553">+64 4-202
-                        5553</a>
-                </div>
-                <div>
-                    <a class="text-light" href="https://www.facebook.com/PapeleriayBoutiqueDimas" target="_blank"
-                        rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://www.instagram.com/papeleriayboutiquedimas/" target="_blank"><i
-                            class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Close Top Nav -->
+    
+    <jsp:include page="/WEB-INF/jspf/topnav.jsp" />
 
     <!-- Header -->
     <jsp:include page="/WEB-INF/jspf/navbar.jsp" />
@@ -78,13 +58,13 @@ https://templatemo.com/tm-559-zay-shop
         <div class="container">
             <div class="row align-items-center py-5">
                 <div class="col-md-8 text-black">
-                    <h1>Papelerí­a</h1>
+                    <h1>Papelerï¿½ï¿½a</h1>
                     <p>
                         <br>
-                         Encuentra todo lo que necesitas para el trabajo y el estudio en nuestra sección de papelería. 
-                         Desde lápices y bolígrafos hasta material de oficina personalizado. En nuestra sección de papelería,
-                         te ofrecemos mucho más que simples suministros de oficina. Es el lugar donde la creatividad se encuentra
-                         con la funcionalidad, proporcionándote todo lo necesario para expresarte y tener éxito en tus proyectos.
+                         Encuentra todo lo que necesitas para el trabajo y el estudio en nuestra secciï¿½n de papelerï¿½a. 
+                         Desde lï¿½pices y bolï¿½grafos hasta material de oficina personalizado. En nuestra secciï¿½n de papelerï¿½a,
+                         te ofrecemos mucho mï¿½s que simples suministros de oficina. Es el lugar donde la creatividad se encuentra
+                         con la funcionalidad, proporcionï¿½ndote todo lo necesario para expresarte y tener ï¿½xito en tus proyectos.
 
                     </p>
                 </div>
@@ -105,10 +85,10 @@ https://templatemo.com/tm-559-zay-shop
                     <h1>Boutique</h1>
                     <p>
                         <br>
-                        Descubre las últimas tendencias de moda y estilo en nuestra boutique. 
+                        Descubre las ï¿½ltimas tendencias de moda y estilo en nuestra boutique. 
                         Desde ropa elegante y accesorios hasta calzado de moda, te ayudaremos a encontrar 
-                        el look perfecto para cualquier ocasión. Además, nuestro equipo de expertos
-                        en moda está aquí para brindarte asesoramiento personalizado y garantizar que te veas y te sientas increíble.
+                        el look perfecto para cualquier ocasiï¿½n. Ademï¿½s, nuestro equipo de expertos
+                        en moda estï¿½ aquï¿½ para brindarte asesoramiento personalizado y garantizar que te veas y te sientas increï¿½ble.
 
                     </p>
                 </div>
@@ -125,8 +105,8 @@ https://templatemo.com/tm-559-zay-shop
                     <p>
                         <br>
                         No te pierdas la oportunidad de ganar emocionantes premios en nuestros sorteos y rifas. 
-                        Participa para tener la oportunidad de llevarte a casa increíbles regalos, descuentos especiales y mucho más. 
-                        Es nuestra manera de agradecer tu apoyo y fomentar la diversión y la emoción entre nuestra comunidad de clientes
+                        Participa para tener la oportunidad de llevarte a casa increï¿½bles regalos, descuentos especiales y mucho mï¿½s. 
+                        Es nuestra manera de agradecer tu apoyo y fomentar la diversiï¿½n y la emociï¿½n entre nuestra comunidad de clientes
 
                     </p>
                 </div>

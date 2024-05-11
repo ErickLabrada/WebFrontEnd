@@ -1,10 +1,8 @@
 
-const url = "/WebFrontEnd/ObtenerProductos";
+const url = DATOS.URL.obtenerProductos;
 const contenedorProductos = document.getElementById("contenedorProductos");
 
 const createCards = (producto) => {
-
-    console.log(producto)
 
     const divPadre = document.createElement("div");
     divPadre.classList.add("cold-md-4");

@@ -30,33 +30,13 @@
     https://templatemo.com/tm-559-zay-shop
     
         -->
+        <script src="assets/js/equipo/Datos.js"></script>
         <script src="assets/js/equipo/obtenerProductos.js" defer></script>
 
     </head>
 
     <body>
-        <!-- Start Top Nav -->
-        <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
-            <div class="container text-light">
-                <div class="w-100 d-flex justify-content-between">
-                    <div>
-                        <i class="fa fa-envelope mx-2"></i>
-                        <a class="navbar-sm-brand text-light text-decoration-none"
-                           href="mailto:dymas-@hotmail.com">dymas-@hotmail.com</a>
-                        <i class="fa fa-phone mx-2"></i>
-                        <a class="navbar-sm-brand text-light text-decoration-none" href="tel:+64 4-202 5553">+64 4-202
-                            5553</a>
-                    </div>
-                    <div>
-                        <a class="text-light" href="https://www.facebook.com/PapeleriayBoutiqueDimas" target="_blank"
-                           rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                        <a class="text-light" href="https://www.instagram.com/papeleriayboutiquedimas/" target="_blank"><i
-                                class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!-- Close Top Nav -->
+        <jsp:include page="/WEB-INF/jspf/topnav.jsp" />
 
         <!-- Header -->
         <jsp:include page="/WEB-INF/jspf/navbar.jsp" />
@@ -67,11 +47,11 @@
             <div class="row">
 
                 <div class="col-lg-3">
-                    <h1 class="h2 pb-4">Categorías</h1>
+                    <h1 class="h2 pb-4">Categorï¿½as</h1>
                     <ul class="list-unstyled templatemo-accordion">
                         <li class="pb-3">
                             <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                                Papelerí­a
+                                Papelerï¿½ï¿½a
                                 <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
                             </a>
                             <ul class="collapse show list-unstyled pl-3">

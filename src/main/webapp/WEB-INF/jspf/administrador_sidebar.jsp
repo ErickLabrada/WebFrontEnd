@@ -20,6 +20,7 @@
                         <div class="list-group">
                             <a href="agregar_producto.jsp" class="list-group-item list-group-action">Agregar producto</a>
                             <a href="editar_producto.jsp" class="list-group-item list-group-action">Editar producto</a>
+                            <a href="consultar_productos.jsp" class="list-group-item list-group-action">Consultar productos</a>
                             <a href="eliminar_producto.jsp" class="list-group-item list-group-action">Eliminar producto</a>
                         </div>
 
@@ -77,4 +78,3 @@
 
 
 </div>
-

@@ -6,20 +6,34 @@ class Peticion {
         this.datos = datos;
     }
 
-    async enviarPeticion() {
-
-        console.log(new URLSearchParams(this.datos).toString());
-
-        let payloadSize = new URLSearchParams(this.datos).toString().length;
-
-        console.log(payloadSize);
+    async enviarPeticion(headers) {
 
         let res = await fetch(this.uri, {
             method: "POST",
-            headers: {
+            headers: headers || {
                 "Content-Type": "application/x-www-form-urlencoded"
             },
             body: new URLSearchParams(this.datos).toString(),
+        })
+
+        let data = await res.json();
+
+        return data;
+    }
+
+    async realizarGET() {
+
+        let res = await fetch(this.uri, {
+            method: "GET"
+        });
+
+        return await res.json();
+    }
+
+    async realizarPeticion() {
+        let res = await fetch(this.uri, {
+            method: "POST",
+            body: this.datos,
         })
 
         let data = await res.json();

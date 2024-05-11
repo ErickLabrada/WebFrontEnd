@@ -30,7 +30,7 @@
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/WebFrontEnd">Inicio</a>
+                            <a class="nav-link" href="/tiendita">Inicio</a>
                         </li>
 
                         <li class="nav-item">
@@ -49,7 +49,7 @@
                         <%if (usuario != null && usuario.isIsAdmin()) {%>
                                 
                         <li class="nav-item">
-                            <a class="nav-link" href="info.jsp">Administración</a>
+                            <a class="nav-link" href="info.jsp">Administraciï¿½n</a>
                         </li>
                         
                         <%}%>
@@ -92,7 +92,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalLoginLabel">Inicio de sesión</h1>
+                    <h1 class="modal-title fs-5" id="modalLoginLabel">Inicio de sesiï¿½n</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
@@ -112,8 +112,8 @@
                     <div class="row">
                         <div class="col p-3">
                             <div class="form-floating">
-                                <input type="password" name="pass" class="form-control" placeholder="Contraseña">
-                                <label for="pass">Contraseña</label>
+                                <input type="password" name="pass" class="form-control" placeholder="Contraseï¿½a">
+                                <label for="pass">Contraseï¿½a</label>
                             </div>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                     
                 </form>
                 
-                <a href="registro.jsp"> ¡registrarse! </a>
+                <a href="registro.jsp"> ï¿½registrarse! </a>
                 
             </div>
         </div>

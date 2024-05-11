@@ -27,28 +27,8 @@ https://templatemo.com/tm-559-zay-shop
 </head>
 
 <body>
-    <!-- Start Top Nav -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
-        <div class="container text-light">
-            <div class="w-100 d-flex justify-content-between">
-                <div>
-                    <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none"
-                        href="mailto:dymas-@hotmail.com">dymas-@hotmail.com</a>
-                    <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:+64 4-202 5553">+64 4-202
-                        5553</a>
-                </div>
-                <div>
-                    <a class="text-light" href="https://www.facebook.com/PapeleriayBoutiqueDimas" target="_blank"
-                        rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://www.instagram.com/papeleriayboutiquedimas/" target="_blank"><i
-                            class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Close Top Nav -->
+    
+    <jsp:include page="/WEB-INF/jspf/topnav.jsp" />
 
     <!-- Header -->
     <jsp:include page="/WEB-INF/jspf/navbar.jsp" />
@@ -80,10 +60,10 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="col-md-8 text-black">
                     <h1>Sobre nosotros</h1>
                     <p>
-                        Boutique Dimas no es solo una tienda, ¡es el centro de la organización y la comida! 
-                        Imagina un lugar donde puedes encontrar desde el lápiz más puntiagudo 
-                        hasta la lata de frijoles más deliciosa. Las creadoras y organizadoras mantienen un establecimiento 
-                        donde cada artículo cumple con tus expectativas. ¡Ven a Boutique Dimas, donde comprar es una aventura!
+                        Boutique Dimas no es solo una tienda, ï¿½es el centro de la organizaciï¿½n y la comida! 
+                        Imagina un lugar donde puedes encontrar desde el lï¿½piz mï¿½s puntiagudo 
+                        hasta la lata de frijoles mï¿½s deliciosa. Las creadoras y organizadoras mantienen un establecimiento 
+                        donde cada artï¿½culo cumple con tus expectativas. ï¿½Ven a Boutique Dimas, donde comprar es una aventura!
                     </p>
                 </div>
                 <div class="col-md-4">

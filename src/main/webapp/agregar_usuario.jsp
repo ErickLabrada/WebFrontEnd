@@ -12,6 +12,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+        <script src="assets/js/equipo/Datos.js"></script>
+
     </head>
 
     <body>
@@ -53,8 +56,8 @@
                                             <label for="usuario">Nombre de usuario...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="password" name="pass" class="form-control" placeholder="Contraseña">
-                                            <label for="pass">Contraseña...</label>
+                                            <input type="password" name="pass" class="form-control" placeholder="Contraseï¿½a">
+                                            <label for="pass">Contraseï¿½a...</label>
                                         </div>
 
                                         <div class="col-2 align-self-center">
@@ -71,7 +74,7 @@
                                             e.preventDefault();
                                             const formData = new FormData(form);
                                             console.log(new URLSearchParams(formData).toString());
-                                            let res = await fetch('CrearUsuario', {
+                                            let res = await fetch(DATOS.URL.agregarUsuario, {
                                                 method: 'POST',
                                                 headers: {
                                                     'Content-Type': 'application/x-www-form-urlencoded'

@@ -5,6 +5,8 @@
 package servlet;
 
 import Util.Consultas;
+import Util.Data;
+import com.google.gson.Gson;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -31,19 +33,24 @@ public class EliminarProducto extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
+        response.setContentType("application/json");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-              String id = request.getParameter("idProducto");
+            String id = request.getParameter("idProducto");
 
-            
             Consultas c = new Consultas();
-            
+
+            Data d = new Data();
+            Gson g = new Gson();
+
             if (c.eliminarProducto(Integer.parseInt(id))) {
-                response.sendRedirect("exitoEliminacion.jsp");
+                d.data = "¡El producto se elimino con exito!";
             } else {
-                response.sendRedirect("errorEliminacion.jsp");
+                d.data = "¡Hubo un error al eliminar el producto!";
             }
+
+            out.write(g.toJson(d));
+
         }
     }
 

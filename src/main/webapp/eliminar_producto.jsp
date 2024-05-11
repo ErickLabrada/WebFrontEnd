@@ -12,6 +12,11 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+        <script src="assets/js/equipo/Datos.js"></script>
+        <script src="assets/js/equipo/peticiones.js"></script>
+        <script src="assets/js/equipo/eliminarProducto.js"></script>
+
     </head>
 
     <body>
@@ -47,15 +52,15 @@
                                 </div>
 
                                 <div class="row">
-                                    <form action="#" method="post" class="col-8">
+                                    <form action="#" method="post" class="col-8" id="form">
                                         <div class="form-floating mb-3">
-                                            <input type="text" name="idProducto" class="form-control" placeholder="idProducto">
+                                            <input default="0" type="number" id="idProducto" name="idProducto" class="form-control" placeholder="idProducto">
                                             <label for="usuario">ID del producto...</label>
                                         </div>
                                     </form>
 
                                     <div class="col-2 align-self-center">
-                                        <button class="btn btn-primary btn-lg">Eliminar</button>
+                                        <button class="btn btn-primary btn-lg" onclick="eliminarProducto()">Eliminar</button>
                                     </div>
 
                                 </div>

@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="assets/js/equipo/Datos.js"></script>
 </head>
 
 <body>
@@ -55,7 +56,7 @@
                                     <div class="form-floating mb-3">
                                         <input type="text" name="descripcion" class="form-control"
                                             placeholder="Descripciï¿½n">
-                                        <label for="nombreProducto">Descripción...</label>
+                                        <label for="nombreProducto">Descripciï¿½n...</label>
                                     </div>
                                     <div class="form-floating mb-3">
                                         <input type="number" name="precio" class="form-control" placeholder="Precio">
@@ -80,7 +81,7 @@
                                         event.preventDefault();
                                         let formData = new FormData(form);
                                         
-                                        let response = await fetch('CrearProducto', {
+                                        let response = await fetch(DATOS.URL.agregarProducto, {
                                             method: 'POST',
                                             body: formData
                                         });
@@ -103,19 +104,7 @@
                     <!-- fin del contenido -->
 
                     <script src="assets/js/equipo/peticiones.js"></script>
-
-                    <script>
-                        
-                        function enviarPeticion() {
-
-                            let peticion = new Peticion(
-
-                            );
-
-                        }
-
-                    </script>
-
+                    
                 </div>
 
             </div>
