@@ -72,6 +72,7 @@ function cambiarCartaProducto(idProducto) {
                 <p>Producto: ${producto.Nombre}</p>
                 <p>Precio: ${producto.precio}</p>
                 <p>Descripcion: ${producto.Descripcion}</p>
+                <p class="btn btn-warning" onclick="productosGuardados.enviarCompra()"> Realizar compra<i class="fa fa-credit-card"></i> </p>
     `
 
 }

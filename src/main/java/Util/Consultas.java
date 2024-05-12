@@ -565,6 +565,36 @@ public class Consultas extends Conexion {
         return inventario;
     }
 
+    public boolean hayInventario(int id, int cantidad) {
+        PreparedStatement ps;
+        ResultSet rs;
+
+        try (Connection c = new Conexion().getConexion()) {
+
+            String sql = "SELECT stock FROM stocks WHERE Producto_id=?";
+
+            ps = c.prepareStatement(sql);
+            ps.setInt(1, id);
+
+            rs = ps.executeQuery();
+
+            if (!rs.next()) {
+                return false;
+            }
+
+            return rs.getInt("stock") > cantidad;
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            return false;
+        }
+
+    }
+
+    public boolean generarVenta(int id, int cantidad) {
+
+    }
+
     public boolean autenticacion(String name, String password) {
 
         PreparedStatement pst = null;

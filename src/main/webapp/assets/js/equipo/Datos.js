@@ -14,6 +14,7 @@ const DATOS = {
         agregarAlCarrito: appname+"/AgregarAlCarrito",
         consultarCarrito: appname+"/ConsultarCarrito",
         obtenerCarrito: appname+"/ObtenerCarrito",
-        eliminarCarritoProducto: appname+"/EliminarProductoCarrito"
+        eliminarCarritoProducto: appname+"/EliminarProductoCarrito",
+        generarCompra: appname+"/GenerarCompra"
     }
 }

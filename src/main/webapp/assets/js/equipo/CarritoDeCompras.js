@@ -40,4 +40,10 @@ class CarritoDeCompras {
         this.ListaProductos = arrayProvicional;
     }
 
+    async enviarCompra() {
+
+        console.log(this.ListaProductos);
+
+    }
+
 }
