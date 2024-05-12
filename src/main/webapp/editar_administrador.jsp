@@ -50,20 +50,22 @@
                                 <div class="row">
                                     <form action="#" method="post" class="col-8">
                                         <div class="form-floating mb-3">
-                                            <input type="text" name="usuarioActual" class="form-control"
+                                            <input required type="text" name="usuarioActual" class="form-control"
                                                    placeholder="Usuario actual">
                                             <label for="usuario">Nombre de usuario...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="password" name="contraseñaNueva" class="form-control"
+                                            <input required type="password" name="contraseñaNueva" class="form-control"
                                                    placeholder="Contraseña Nueva">
-                                            <label for="contraseña">Nueva contraseña...</label>
+                                            <label for="contraseña">Nueva contrase&ntilde;a...</label>
+                                        </div>
+                                        
+                                        <div class="col-2 align-self-center">
+                                            <button type="submit" class="btn btn-primary btn-lg">Editar</button>
                                         </div>
                                     </form>
 
-                                    <div class="col-2 align-self-center">
-                                        <button class="btn btn-primary btn-lg">Editar</button>
-                                    </div>
+                                    
 
 
                                 </div>

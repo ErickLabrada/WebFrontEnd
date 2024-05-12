@@ -51,25 +51,26 @@
                                 <div class="row">
                                     <form action="EditarUsuario" method="POST" class="col-8" id="form">
                                         <div class="form-floating mb-3">
-                                            <input type="text" name="usuarioActual" class="form-control"
+                                            <input required type="text" name="usuarioActual" class="form-control"
                                                    placeholder="Usuario actual">
                                             <label for="usuario">Nombre de usuario actual...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="text" name="usuarioNuevo" class="form-control"
+                                            <input required type="text" name="usuarioNuevo" class="form-control"
                                                    placeholder="Usuario nuevo">
                                             <label for="usuario">Nuevo nombre de usuario...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="password" name="newPass" class="form-control"
-                                                   placeholder="Contrase�a nueva">
-                                            <label for="contraseña">Nueva contrase�a...</label>
+                                            <input required type="password" name="newPass" class="form-control"
+                                                   placeholder="Contrase&ntilde;a nueva">
+                                            <label for="contraseña">Nueva contrase&ntilde;a...</label>
                                         </div>
                                         <div class="form-check form-switch d-flex justify-content-between">
-                                            <label class="form-check-label text-start" for="adminRole">Dar permisos de
-                                                administraci�n</label>
+                                            <label class="form-check-label text-start" for="adminRole">
+                                                Dar permisos de administraci&oacute;n
+                                            </label>
                                             <input class="form-check-input" type="checkbox" id="adminRole" name="isAdmin"
-                                                   value="true" checked>
+                                                   value="true">
                                         </div>
                                         <div class="col-2 align-self-center">
                                             <input value="Editar" class="btn btn-primary btn-lg" type="submit" >

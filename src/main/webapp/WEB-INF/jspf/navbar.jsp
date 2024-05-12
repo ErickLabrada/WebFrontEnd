@@ -46,7 +46,7 @@
                         <%if (usuario != null && usuario.isIsAdmin()) {%>
                                 
                         <li class="nav-item">
-                            <a class="nav-link" href="info.jsp">Administraci�n</a>
+                            <a class="nav-link" href="info.jsp">Administraci&oacute;n</a>
                         </li>
                         
                         <%}%>
@@ -94,7 +94,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalLoginLabel">Inicio de sesi�n</h1>
+                    <h1 class="modal-title fs-5" id="modalLoginLabel">Inicio de sesi&oacute;n</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
@@ -104,7 +104,7 @@
                         <div class="col p-3">
 
                             <div class="form-floating">
-                                <input type="text" class="form-control" name="usuario" placeholder="Usuario">
+                                <input required type="text" class="form-control" name="usuario" placeholder="Usuario">
                                 <label for="usuario">Usuario</label>
                             </div>
 
@@ -114,15 +114,15 @@
                     <div class="row">
                         <div class="col p-3">
                             <div class="form-floating">
-                                <input type="password" name="pass" class="form-control" placeholder="Contrase�a">
-                                <label for="pass">Contrase�a</label>
+                                <input required type="password" name="pass" class="form-control" placeholder="Contrase�a">
+                                <label for="pass">Contrase&ntilde;a</label>
                             </div>
                         </div>
                     </div>
 
                     <div class="row justify-content">
                         <div class="order-last pr-3">
-                            <button class="btn btn-primary">Iniciar Sesi�n</button>
+                            <button class="btn btn-primary">Iniciar Sesi&oacute;n</button>
                         </div>
                     </div>
                     

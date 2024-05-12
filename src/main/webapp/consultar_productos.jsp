@@ -33,7 +33,7 @@
 
                     <div class="row">
 
-                        <div class="col text-bg-secondary">Claro q si</div>
+                        <div class="col text-bg-secondary">Consultar Productos</div>
 
                     </div>
 

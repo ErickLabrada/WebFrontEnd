@@ -54,23 +54,23 @@
                                 <div class="row">
                                     <form action="#" method="post" class="col-8" id="form" enctype="multipart/form-data">
                                         <div class="form-floating mb-3">
-                                            <input id="idProducto" type="text" name="idProducto" class="form-control" placeholder="idProducto">
+                                            <input required id="idProducto" type="text" name="idProducto" class="form-control" placeholder="idProducto">
                                             <label for="nombreProducto">ID del producto...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input id="nombre" type="text" name="nombre" class="form-control" placeholder="Producto">
+                                            <input required id="nombre" type="text" name="nombre" class="form-control" placeholder="Producto">
                                             <label for="nombreProducto">Nuevo nombre del producto...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input id="descripcion" type="text" name="descripcion" class="form-control" placeholder="Descripci�n">
-                                            <label for="nombreProducto">Nueva descripci�n...</label>
+                                            <input required min="1" id="descripcion" type="number" name="descripcion" class="form-control" placeholder="Descripci�n">
+                                            <label for="nombreProducto">Nueva descripci&oacute;n...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input id="precio" type="number" name="precio" class="form-control" placeholder="Precio">
+                                            <input required min="0" id="precio" type="number" name="precio" class="form-control" placeholder="Precio">
                                             <label for="nombreProducto">Nuevo precio...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input id="img" type="file" name="img" class="form-control" placeholder="Img">
+                                            <input required id="img" type="file" name="img" class="form-control" placeholder="Img">
                                             <label for="nombreProducto">Nueva foto...</label>
                                         </div>
 
