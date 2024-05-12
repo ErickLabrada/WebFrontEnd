@@ -31,6 +31,7 @@
     
         -->
         <script src="assets/js/equipo/Datos.js"></script>
+        <script src="assets/js/equipo/agregarProductoCoockie.js"></script>
         <script src="assets/js/equipo/obtenerProductos.js" defer></script>
 
     </head>

@@ -12,16 +12,13 @@ const createCards = (producto) => {
     divCard.classList.add("mb-4");
     divCard.classList.add("product-wap");
     divCard.classList.add("rounded-0");
-
+    console.log(producto)
     divCard.innerHTML = `<div class="card mb-4 product-wap rounded-0>
             <div class="card rounded-0">
                 <img class="card-img rounded-0 img-fluid" src="${producto.Img}">                                
                     <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                     <ul class="list-unstyled">
-                        <li><a class="btn btn-success text-white" href="shop-single.html">
-                        <i class="far fa-heart"></i></a></li> 
-                        <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="far fa-eye"></i></a></li> 
-                        <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="fas fa-cart-plus"></i></a></li>
+                        <li><button class="btn btn-success text-white mt-2" onclick="agregarProducto(${producto.id})"><i class="fas fa-cart-plus"></i></button></li>
                     </ul>
                 </div>
             </div>
@@ -41,8 +38,8 @@ const createCards = (producto) => {
                         <i class="text-warning fa fa-star"></i> 
                         <i class="text-warning fa fa-star"></i> 
                         <i class="text-warning fa fa-star"></i> 
-                        <i class="text-muted fa fa-star"></i> 
-                        <i class="text-muted fa fa-star"></i> 
+                        <i class="text-warning fa fa-star"></i> 
+                        <i class="text-warning fa fa-star"></i> 
                     </li>
                 </ul>
                 <p class="text-center mb-0">$${producto.precio}</p>                            
