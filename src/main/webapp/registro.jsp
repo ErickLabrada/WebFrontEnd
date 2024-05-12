@@ -24,20 +24,20 @@
                 <div class="row vh-100 align-items-center">
                     <!-- aqui empieza el de verdad -->
                     
-                    <div class="container text-bg-primary">
+                    <form> <div class="container text-bg-primary">
 
                         <div class="row justify-content-center">
         
                             <div class="col-6">
         
                                 <div class="form-floating mb-3">
-                                    <input type="text" placeholder="Nombre" name="usuario" id="Nombre" class="form-control">
+                                    <input required type="text" placeholder="Nombre" name="usuario" id="Nombre" class="form-control">
                                     <label for="usuario">Nombre</label>
                                 </div>
         
                                 <div class="form-floating mb-3" >
-                                    <input class="form-control" type="password" placeholder="Contrase�a" name="pass" id="pass">
-                                    <label for="pass">Contrase�a</label>
+                                    <input required class="form-control" type="password" placeholder="Contrase�a" name="pass" id="pass">
+                                    <label for="pass">Contrase&ntilde;a</label>
                                 </div>
         
                             </div>
@@ -46,12 +46,12 @@
                        
                         <div class="row justify-content-center">
                             <div class="col-2">
-                                <button class="btn btn-primary" onclick="enviarPeticion()">Enviar</button>
+                                <button type="submit" class="btn btn-primary" onclick="enviarPeticion()">Enviar</button>
                                 <button class="btn btn-secondary" onclick="window.location.href = '/WebFrontEnd/'">Cancelar</button>
                             </div>
                         </div>
 
-                    </div>
+                        </div> </form>
 
                     <!-- aqui termina el de verdad -->
                 </div>

@@ -52,12 +52,12 @@
                                 <div class="row">
                                     <form action="CrearUsuario" method="POST" class="col-8" id="form">
                                         <div class="form-floating mb-3">
-                                            <input type="text" name="usuario" class="form-control" placeholder="Usuario">
+                                            <input required type="text" name="usuario" class="form-control" placeholder="Usuario">
                                             <label for="usuario">Nombre de usuario...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="password" name="pass" class="form-control" placeholder="Contrase�a">
-                                            <label for="pass">Contrase�a...</label>
+                                            <input required type="password" name="pass" class="form-control" placeholder="Contrase�a">
+                                            <label for="pass">Contrase&ntilde;a...</label>
                                         </div>
 
                                         <div class="col-2 align-self-center">

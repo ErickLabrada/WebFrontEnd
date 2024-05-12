@@ -50,21 +50,21 @@
                             <div class="row">
                                 <form action="CrearProducto" method="POST" class="col-8" enctype="multipart/form-data" id="form">
                                     <div class="form-floating mb-3">
-                                        <input type="text" name="nombre" class="form-control" placeholder="Producto">
+                                        <input required type="text" name="nombre" class="form-control" placeholder="Producto">
                                         <label for="nombreProducto">Nombre del producto...</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="text" name="descripcion" class="form-control"
+                                        <input required type="text" name="descripcion" class="form-control"
                                             placeholder="Descripci�n">
-                                        <label for="nombreProducto">Descripci�n...</label>
+                                        <label for="nombreProducto">Descripci&oacute;n...</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="number" name="precio" class="form-control" placeholder="Precio">
+                                        <input required min="0" type="number" name="precio" class="form-control" placeholder="Precio">
                                         <label for="nombreProducto">Precio...</label>
                                     </div>
                                     <div class="input-group mb-3">
                                         <label class="input-group-text" name="inputGroupFile01">Subir foto</label>
-                                        <input type="file" class="form-control" name="inputGroupFile01">
+                                        <input required type="file" class="form-control" name="inputGroupFile01">
                                     </div>
 
                                     <div class="col-2 align-self-center" onclick="enviarPeticion()">

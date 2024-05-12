@@ -54,14 +54,15 @@
                                 <div class="row">
                                     <form action="#" method="post" class="col-8" id="form">
                                         <div class="form-floating mb-3">
-                                            <input default="0" type="number" id="idProducto" name="idProducto" class="form-control" placeholder="idProducto">
+                                            <input required min="1" type="number" id="idProducto" name="idProducto" class="form-control" placeholder="idProducto">
                                             <label for="usuario">ID del producto...</label>
+                                        </div>
+                                        
+                                        <div class="col-2 align-self-center">
+                                            <button type="submit" class="btn btn-primary btn-lg" onclick="eliminarProducto()">Eliminar</button>
                                         </div>
                                     </form>
 
-                                    <div class="col-2 align-self-center">
-                                        <button class="btn btn-primary btn-lg" onclick="eliminarProducto()">Eliminar</button>
-                                    </div>
 
                                 </div>
                                 <!-- fin del formulario  -->
