@@ -51,15 +51,20 @@ public class RealizarCompra extends HttpServlet {
                 String cantidad = request.getParameter(id.toString());
                 Consultas c = new Consultas();
 
-                if (!c.hayInventario(id, Integer.parseInt(cantidad))) {
-                    d.data = "El producto con id: " + id + " no tiene stock suficiente";
-                    out.write(gson.toJson(d));
-                    return;
-                }
+//                if (!c.hayInventario(id, Integer.parseInt(cantidad))) {
+//                    d.data = "El producto con id: " + id + " no tiene stock suficiente";
+//                    out.write(gson.toJson(d));
+//                    return;
+//                }
+
+                c.generarVenta(id);
 
             }
 
-            Consultas c = new Consultas();
+            d.data = "La venta se genero con exito";
+            
+            out.write(gson.toJson(d));
+            
 
         }
     }

@@ -60,6 +60,12 @@
                         <!-- se agrega dinamicamente -->
 
                     </tbody>
+                    
+                    <script>
+                        
+                        
+                        
+                    </script>
                 </table>
             </div>
         </div>

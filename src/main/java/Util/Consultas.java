@@ -591,8 +591,35 @@ public class Consultas extends Conexion {
 
     }
 
-    public boolean generarVenta(int id, int cantidad) {
+    public boolean generarVenta(int id) {
+        PreparedStatement pst = null;
+        ResultSet rs = null;
 
+        try {
+            String consulta = "INSERT INTO compras(Producto_id) VALUES(?)";
+            System.out.println("Consulta: " + consulta);
+            pst = getConexion().prepareStatement(consulta, ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+            pst.setInt(1, id);
+            return pst.executeUpdate() == 1;
+
+        } catch (Exception e) {
+            System.out.println("Error en " + e);
+        } finally {
+            try {
+                if (getConexion() != null) {
+                    getConexion().close();
+                }
+                if (pst != null) {
+                    pst.close();
+                }
+                if (rs != null) {
+                    rs.close();
+                }
+            } catch (Exception e) {
+                System.out.println("Error en " + e);
+            }
+        }
+        return false;
     }
 
     public boolean autenticacion(String name, String password) {

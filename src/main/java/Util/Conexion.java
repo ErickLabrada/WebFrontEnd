@@ -16,9 +16,9 @@ public class Conexion {
     
     private final String host = "localhost";
     private final String user = "root";
-    private final String pass = "123";
+    private final String pass = "13268Zay";
     private final String port = "3306";
-    private final String dbName = "Papeleria";
+    private final String dbName = "papeleria";
     
     private final String url = "jdbc:mysql://"+host+":"+port+"/"+dbName+"?useSSL=false&allowPublicKeyRetrieval=true";
     
