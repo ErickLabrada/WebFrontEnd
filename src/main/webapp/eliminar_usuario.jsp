@@ -58,7 +58,7 @@
                                     </div>
 
                                     <div class="col-2 align-self-center">
-                                        <input type="submit" class="btn btn-primary btn-lg" value="Eliminar">
+                                        <input type="submit" class="btn"style="background-color: #C07F00; color: white;"value="Eliminar">
                                     </div>
 
                                 </form>

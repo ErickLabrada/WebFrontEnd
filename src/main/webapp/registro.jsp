@@ -46,7 +46,7 @@
                        
                         <div class="row justify-content-center">
                             <div class="col-2">
-                                <button type="submit" class="btn btn-primary" onclick="enviarPeticion()">Enviar</button>
+                                <button type="submit" class="btn" onclick="enviarPeticion()" style="background-color: #C07F00;">Enviar</button>
                                 <button class="btn btn-secondary" onclick="window.location.href = '/WebFrontEnd/'">Cancelar</button>
                             </div>
                         </div>

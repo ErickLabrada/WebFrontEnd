@@ -56,7 +56,7 @@
                     <div class="row align-items-center h-100">
 
                         <div class="col">
-                            Pgina para la administración del sistema
+                            Página para la administración del sistema
                             de ventas Boutique Dimas.
                             Para más información, consulte a la persona encargada del sistema.
                         </div>

@@ -61,7 +61,7 @@
                                         </div>
 
                                         <div class="col-2 align-self-center">
-                                            <button class="btn btn-primary btn-lg">Registrar</button>
+                                            <button class="btn"style="background-color: #C07F00; color: white;">Registrar</button>
                                         </div>
 
                                     </form>

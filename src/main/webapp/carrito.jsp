@@ -23,26 +23,25 @@
 
 </head>
 <body>
-    
+
     <jsp:include page="WEB-INF/jspf/topnav.jsp" />
     <jsp:include page="WEB-INF/jspf/navbar.jsp" />
 
 
     <div class="container-fluid">
-
         <div class="row">
 
-            <div class="col-4 bg-primary" id="informacionProducto">
 
-                <!-- apartado de informacion del producto -->
+            <div class="col-4" id="informacionProducto" style="background-color: #4C3D3D; color: white">
+                <!-- Apartado de información del producto -->
 
-                <img src="assets/img/banner_img_02.jpg" class="img-tumbnail rounded img-fluid" alt="">
+                <img src="assets/img/banner_img_02.jpg" class="img-thumbnail rounded img-fluid" alt="">
 
                 <p>Producto: </p>
                 <p>Precio: </p>
-                <p>Descripcion: </p>
-
+                <p>Descripción: </p>
             </div>
+
 
             <div class="col-8">
 

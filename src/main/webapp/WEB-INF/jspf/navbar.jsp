@@ -48,7 +48,7 @@
                             <a class="nav-link" href="info.jsp">Administraci&oacute;n</a>
                         </li>
                         
-                        <%}%>
+                        <% }%>
                         
                     </ul>
                 </div>
@@ -68,7 +68,7 @@
                     <a class="nav-icon position-relative text-decoration-none" href="carrito.jsp">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <span
-                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
                     </a>
                     <button class="btn nav-icon position-relative text-decoration-none" data-bs-target="#modalLogin"
                         data-bs-toggle="modal">
@@ -121,7 +121,7 @@
 
                     <div class="row justify-content">
                         <div class="order-last pr-3">
-                            <button class="btn btn-primary">Iniciar Sesi&oacute;n</button>
+                            <button class="btn " style="background-color: #C07F00; color:white">Iniciar Sesi&oacute;n</button>
                         </div>
                     </div>
                     
@@ -150,7 +150,7 @@
             <form action="" method="get" class="modal-content modal-body border-0 p-0">
                 <div class="input-group mb-2">
                     <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
-                    <button type="submit" class="input-group-text bg-success text-light">
+                    <button type="submit" class="input-group-text  text-light"style="background-color: #C07F00;"  >
                         <i class="fa fa-fw fa-search text-white"></i>
                     </button>
                 </div>

@@ -1,5 +1,6 @@
-<!-- sidebar menu -->
-<div class="col-2 text-bg-primary vh-100 overflow-y-auto">
+<!-- Sidebar Menu -->
+<div class="col-2 vh-100 overflow-y-auto" style="background-color: #4C3D3D;">
+    <!-- Your content here -->
 
     <div class="row">
         <div class="col text-bg-secondary accordion">
@@ -65,7 +66,7 @@
                     <div class="accordion-body">
 
                         <div class="list-group">
-                            <a href="editar_administrador.jsp" class="list-group-item list-group-action">Editar usuario</a>
+                            <a href="editar_administrador.jsp" class="list-group-item list-group-action">Editar administrador</a>
                         </div>
 
                     </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <title>Sobre nosotros</title>
@@ -43,7 +43,7 @@ https://templatemo.com/tm-559-zay-shop
             </div>
             <form action="" method="get" class="modal-content modal-body border-0 p-0">
                 <div class="input-group mb-2">
-                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Buscar ...">
                     <button type="submit" class="input-group-text bg-success text-light">
                         <i class="fa fa-fw fa-search text-white"></i>
                     </button>
@@ -58,18 +58,18 @@ https://templatemo.com/tm-559-zay-shop
         <div class="container">
             <div class="row align-items-center py-5">
                 <div class="col-md-8 text-black">
-                    <h1>Papelerï¿½ï¿½a</h1>
+                    <h1>Papelería</h1>
                     <p>
                         <br>
-                         Encuentra todo lo que necesitas para el trabajo y el estudio en nuestra secciï¿½n de papelerï¿½a. 
-                         Desde lï¿½pices y bolï¿½grafos hasta material de oficina personalizado. En nuestra secciï¿½n de papelerï¿½a,
-                         te ofrecemos mucho mï¿½s que simples suministros de oficina. Es el lugar donde la creatividad se encuentra
-                         con la funcionalidad, proporcionï¿½ndote todo lo necesario para expresarte y tener ï¿½xito en tus proyectos.
+                         Encuentra todo lo que necesitas para el trabajo y el estudio en nuestra sección de papelería. 
+                         Desde lápices y bolígrafos hasta material de oficina personalizado. En nuestra sección de papelería,
+                         te ofrecemos mucho más que simples suministros de oficina. Es el lugar donde la creatividad se encuentra
+                         con la funcionalidad, proporcionándote todo lo necesario para expresarte y tener éxito en tus proyectos.
 
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/img/Papeleria.png" alt="About Hero">
+                    <img src="assets/img/Papeleria.png" alt="Sobre Nosotros">
                 </div>
             </div>
         </div>
@@ -79,16 +79,16 @@ https://templatemo.com/tm-559-zay-shop
         <div class="container">
             <div class="row align-items-center py-5">
                 <div class="col-md-4">
-                    <img src="assets/img/Boutique.png" alt="About Hero">
+                    <img src="assets/img/Boutique.png" alt="Sobre Nosotros">
                 </div>
                 <div class="col-md-8 text-black">
                     <h1>Boutique</h1>
                     <p>
                         <br>
-                        Descubre las ï¿½ltimas tendencias de moda y estilo en nuestra boutique. 
+                        Descubre las últimas tendencias de moda y estilo en nuestra boutique. 
                         Desde ropa elegante y accesorios hasta calzado de moda, te ayudaremos a encontrar 
-                        el look perfecto para cualquier ocasiï¿½n. Ademï¿½s, nuestro equipo de expertos
-                        en moda estï¿½ aquï¿½ para brindarte asesoramiento personalizado y garantizar que te veas y te sientas increï¿½ble.
+                        el look perfecto para cualquier ocasión. Además, nuestro equipo de expertos
+                        en moda está aquí para brindarte asesoramiento personalizado y garantizar que te veas y te sientas increíble.
 
                     </p>
                 </div>
@@ -105,13 +105,13 @@ https://templatemo.com/tm-559-zay-shop
                     <p>
                         <br>
                         No te pierdas la oportunidad de ganar emocionantes premios en nuestros sorteos y rifas. 
-                        Participa para tener la oportunidad de llevarte a casa increï¿½bles regalos, descuentos especiales y mucho mï¿½s. 
-                        Es nuestra manera de agradecer tu apoyo y fomentar la diversiï¿½n y la emociï¿½n entre nuestra comunidad de clientes
+                        Participa para tener la oportunidad de llevarte a casa increíbles regalos, descuentos especiales y mucho más. 
+                        Es nuestra manera de agradecer tu apoyo y fomentar la diversión y la emoción entre nuestra comunidad de clientes.
 
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/img/Giveaway.png" alt="About Hero">
+                    <img src="assets/img/Giveaway.png" alt="Sobre Nosotros">
                 </div>
             </div>
         </div>

@@ -31,7 +31,7 @@
 
                     <div class="row">
 
-                        <div class="col text-bg-secondary"><%= nombrePagina %></div>
+                        <div class="col text-bg-secondary" ><%= nombrePagina %></div>
 
                     </div>
 
@@ -68,7 +68,7 @@
                                     </div>
 
                                     <div class="col-2 align-self-center" onclick="enviarPeticion()">
-                                        <button class="btn btn-primary btn-lg">Registrar</button>
+                                        <button class="btn"style="background-color: #C07F00; color: white;">Registrar</button>
                                     </div>
 
                                 </form>

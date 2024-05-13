@@ -59,7 +59,7 @@
                                         </div>
                                         
                                         <div class="col-2 align-self-center">
-                                            <button type="submit" class="btn btn-primary btn-lg" onclick="eliminarProducto()">Eliminar</button>
+                                            <button type="submit" class="btn"style="background-color: #C07F00; color: white;" onclick="eliminarProducto()">Eliminar</button>
                                         </div>
                                     </form>
 

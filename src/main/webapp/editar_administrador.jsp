@@ -19,12 +19,12 @@
         <div class="container-fluid">
             <div class="row">
 
-                <!-- sidebar menu -->
+                <!-- Menú lateral -->
                 <jsp:include page="/WEB-INF/jspf/administrador_sidebar.jsp" />
-                <!--fin sidebar-->
+                <!-- Fin menú lateral -->
 
 
-                <!-- Contenido de la pagina -->
+                <!-- Contenido de la página -->
                 <div class="col-10 text-bg-light vh-100 text-center">
 
                     <div class="row text-bg-light h-100 overflow-y-auto">
@@ -35,12 +35,12 @@
 
                         </div>
 
-                        <!-- contenido  -->
+                        <!-- Contenido -->
 
                         <div class="row h-100">
 
                             <div class="col">
-                                <!-- formuario -->
+                                <!-- Formulario -->
                                 <div class="row">
                                     <div class="col">
                                         Editar administrador
@@ -57,11 +57,11 @@
                                         <div class="form-floating mb-3">
                                             <input required type="password" name="contraseñaNueva" class="form-control"
                                                    placeholder="Contraseña Nueva">
-                                            <label for="contraseña">Nueva contrase&ntilde;a...</label>
+                                            <label for="contraseña">Nueva contraseña...</label>
                                         </div>
                                         
                                         <div class="col-2 align-self-center">
-                                            <button type="submit" class="btn btn-primary btn-lg">Editar</button>
+                                            <button class="btn" style="background-color: #C07F00; color: white;">Editar</button>
                                         </div>
                                     </form>
 
@@ -69,12 +69,12 @@
 
 
                                 </div>
-                                <!-- fin del formulario  -->
+                                <!-- Fin del formulario -->
                             </div>
 
                         </div>
 
-                        <!-- fin del contenido -->
+                        <!-- Fin del contenido -->
 
                     </div>
 
